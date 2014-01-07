@@ -115,6 +115,12 @@
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 		<header id="header" role="banner">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<div class="description"><?php bloginfo( 'description' ); ?></div>
+			<button class="nav-toggle pull-right"><i class="fa fa-bars"></i></button>
+			<h1 class="site-title">
+				<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"
+						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+						class=""
+						rel="home"><?php bloginfo( 'name' ); ?></a>
+			</h1>
+			<div class="site-description"><?php bloginfo( 'description' ); ?></div>
 		</header>

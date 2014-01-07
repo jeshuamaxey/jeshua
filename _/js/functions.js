@@ -19,7 +19,7 @@ app.setupNav = function() {
 	var snapSettings = {
 	    element: document.getElementById('content'),
 	    dragger: null,
-	    disable: 'none',
+	    disable: 'right',
 	    addBodyClasses: true,
 	    hyperextensible: true,
 	    resistance: 0.5,
@@ -36,7 +36,7 @@ app.setupNav = function() {
 	//initialise the menu
 	app.snapNav = new Snap(snapSettings);
 	//add the toggle event listener
-	$('').on('click', function(){
+	$('.nav-toggle').on('click', function(){
 	    if( app.snapNav.state().state=="left" ){
 	        app.snapNav.close();
 	    } else {

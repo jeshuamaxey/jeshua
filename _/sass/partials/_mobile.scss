@@ -10,6 +10,11 @@ header {
 	height: 40px;
 
 	background-color: $white;
+
+	.site-title, .site-description {
+		text-align: right;
+		color: $black;
+	}
 }
 
 .content {
