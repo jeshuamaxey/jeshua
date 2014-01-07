@@ -190,6 +190,34 @@ button {
 .clearfix {
   zoom: 1; }
 
+/* HELPERS */
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.scrollable {
+  overflow: auto;
+  -webkit-transition-property: top, bottom;
+  transition-property: top, bottom;
+  -webkit-transition-duration: .2s, .2s;
+  transition-duration: .2s, .2s;
+  -webkit-transition-timing-function: linear, linear;
+  transition-timing-function: linear, linear;
+  -webkit-overflow-scrolling: touch; }
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.chromeframe {
+  position: absolute;
+  top: 0; }
+
+/* BASE */
 /* TYPOGRAPHY */
 /* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
 body {
@@ -239,16 +267,21 @@ input:-moz-placeholder {
 textarea:-moz-placeholder {
   color: #a9a9a9; }
 
-/* MOBILE */
+/* CONTENT (MOBILE FIRST STYLES) */
 /*#wrapper {width: 960px; margin: 20px auto;}*/
-/* VARIABLES */
 header {
   position: fixed;
   z-index: 10;
   right: 0;
   left: 0;
   top: 0;
-  background-color: #1e1e1e; }
+  height: 40px;
+  background-color: #ffffe5; }
+
+.content {
+  padding-top: 40px;
+  background-color: #1e1e1e;
+  color: #ffffe5; }
 
 ol.commentlist {
   list-style: none; }
@@ -301,25 +334,76 @@ ol.commentlist li.odd {
 ol.commentlist li.parent {
   border-left: 5px solid #111; }
 
-/* MAIN */
-/*   
-Theme Name: The HTML5 Reset Theme
-Theme URI: http://html5reset.org
-Description: A style-free theme to get you started on an HTML5-based WordPress theme of your own.
-Author: Monkey Do! + @ckhicks
-Author URI: http://monkeydo.biz
-Version: 2.0
-*/
-/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.chromeframe {
-  position: absolute;
-  top: 0; }
-
+/* CONTENT (LARGER SCREENS) */
 /* Media queries!
 -------------------------------------------------------------------------------*/
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+/* NAV */
+/* VENDOR */
+/*
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+*/
+.snap-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.snap-drawers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto; }
+
+.snap-drawer {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  width: 265px;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  transition: width 0.3s ease; }
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1; }
+
+.snap-drawer-right {
+  right: 0;
+  z-index: 1; }
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none; }
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%; }

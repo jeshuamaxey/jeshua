@@ -107,15 +107,14 @@
 
 <body <?php body_class(); ?>>
 	
-	<div id="wrapper">
+	<nav id="nav" role="navigation" class="snap-drawers">
+			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'snap-drawer-left') );?>
+	</nav>
+
+	<div id="content" class="content snap-content">
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 		<header id="header" role="banner">
 			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<div class="description"><?php bloginfo( 'description' ); ?></div>
 		</header>
-		
-		<nav id="nav" role="navigation">
-			<?php wp_nav_menu( array('menu' => 'primary') ); ?>
-		</nav>
-

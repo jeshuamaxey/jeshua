@@ -5,11 +5,11 @@
  * @since HTML5 Reset 2.0
  */
 ?>
-		<footer id="footer" class="source-org vcard copyright" role="contentinfo">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
-		</footer>
-
-	</div>
+	<footer id="footer" class="source-org vcard copyright" role="contentinfo">
+		<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
+	</footer>
+	
+	</div> <!-- #content -->
 
 	<?php wp_footer(); ?>
 
@@ -21,6 +21,7 @@
 <!-- this is where we put our custom functions -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="<?php bloginfo('template_directory'); ?>/_/js/snap.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/headroom.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.headroom.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>

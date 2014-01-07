@@ -7,23 +7,22 @@ Author URI: http://monkeydo.biz
 Version: 2.0
 */
 
-/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* RESET */
+@import 'partials/_reset';
+/* HELPERS */
+@import 'partials/_helpers';
 
-.chromeframe {position: absolute; top: 0;}
+/* BASE */
+@import 'partials/__base';
+/* TYPOGRAPHY */
+@import 'partials/_typography';
 
-/* Media queries!
--------------------------------------------------------------------------------*/
+/* CONTENT (MOBILE FIRST STYLES) */
+@import 'partials/_mobile';
+/* CONTENT (LARGER SCREENS) */
+@import 'partials/_media-queries';
+/* NAV */
+@import 'partials/_nav';
 
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-
-}
-
-@media all and (orientation: portrait) {
-	
-}
-
-@media all and (orientation: landscape) {
-	
-}
+/* VENDOR */
+@import 'vendor/snap';
