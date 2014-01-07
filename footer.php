@@ -19,6 +19,10 @@
 <!-- jQuery is called via the WordPress-friendly way via functions.php -->
 
 <!-- this is where we put our custom functions -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="<?php bloginfo('template_directory'); ?>/_/js/headroom.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.headroom.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 
 <!-- Asynchronous google analytics; this is the official snippet.
