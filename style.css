@@ -223,16 +223,14 @@ button {
 body {
   font: 13px Helmet, Freesans, sans-serif; }
 
-/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
 /* We like off-black for text. */
 body, select, input, textarea {
-  color: #333; }
+  color: #2b2b27; }
 
 a {
-  color: #03f; }
-
-a:hover {
-  color: #69f; }
+  color: #bf503b; }
+  a:hover {
+    color: #bf503b; }
 
 /* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection {
@@ -279,11 +277,11 @@ header {
   background-color: #ffffe5; }
   header .site-title, header .site-description {
     text-align: right;
-    color: #1e1e1e; }
+    color: #2b2b27; }
 
 .content {
   padding-top: 40px;
-  background-color: #1e1e1e;
+  background-color: #2b2b27;
   color: #ffffe5; }
 
 ol.commentlist {
@@ -342,6 +340,15 @@ ol.commentlist li.parent {
 -------------------------------------------------------------------------------*/
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 /* NAV */
+.nav-toggle {
+  font-size: 100%;
+  color: #2b2b27; }
+  .nav-toggle:hover {
+    curor: pointer; }
+
+.nav {
+  background-color: #e6e6ce; }
+
 /* VENDOR */
 /*
 html, body {

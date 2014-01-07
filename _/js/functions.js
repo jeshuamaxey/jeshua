@@ -11,8 +11,10 @@ var app = app || {};
 
 app.main = function() {
 	app.setupNav();
+	app.setupHeader();
 };
 
+//uses snapfit.js library to create native app like side navigation
 app.setupNav = function() {
 	//find .snap-draw-left & .snap-draw-right add add general class
 	$('[class^="snap-drawer-"]').addClass('snap-drawer');
@@ -43,6 +45,20 @@ app.setupNav = function() {
 	        app.snapNav.open('left');
 	    }
 	});
+}
+
+//
+app.setupHeader = function() {
+	var headroomSettings = {
+	  "tolerance": 5,
+	  "offset": 200,
+	  "classes": {
+	    "initial": "animated",
+	    "pinned": "slideDown",
+	    "unpinned": "slideUp"
+	  }
+	};
+	$("#header").headroom(headroomSettings);
 }
 
 // Must go last

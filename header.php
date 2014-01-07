@@ -107,20 +107,20 @@
 
 <body <?php body_class(); ?>>
 	
-	<nav id="nav" role="navigation" class="snap-drawers">
+	<nav id="nav" role="navigation" class="nav snap-drawers">
 			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'snap-drawer-left') );?>
 	</nav>
 
 	<div id="content" class="content snap-content">
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
-		<header id="header" role="banner">
-			<button class="nav-toggle pull-right"><i class="fa fa-bars"></i></button>
-			<h1 class="site-title">
-				<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"
-						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
-						class=""
-						rel="home"><?php bloginfo( 'name' ); ?></a>
-			</h1>
-			<div class="site-description"><?php bloginfo( 'description' ); ?></div>
-		</header>
+	<header id="header" role="banner">
+		<span class="nav-toggle pull-left"><i class="fa fa-bars"></i></span>
+		<h1 class="site-title">
+			<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"
+					title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+					class=""
+					rel="home"><?php bloginfo( 'name' ); ?></a>
+		</h1>
+		<div class="site-description"><?php bloginfo( 'description' ); ?></div>
+	</header>
