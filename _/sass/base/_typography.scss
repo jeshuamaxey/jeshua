@@ -2,16 +2,42 @@
 *
 */
 
+$font-size: 100%;				//	1.0em, 16px
+$line-height: 1.33333; 	//	4/3 * $font-size
+
 @font-face {
 	font-family: halion;
 	src: url('fonts/halion.ttf'),
      	 url('fonts/halion.svg'); /* IE4+ */
 }
 
-/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
-body {
-	font: 13px halion, serif;
+html, body {
+	font: $font-size halion, serif;
+	//line-height: 
 	color: $black;
+}
+
+h1, h2, h3 {
+	margin-top:0;
+	margin-bottom:0;
+}
+
+// Fibonacci scale factor 13
+h1 {
+	font-size: 4.27273em;
+	padding: 1.36142em 0;
+}
+
+// Fibonacci scale factor 8
+h2 {
+	font-size: 2.63636em;
+	padding: 1.35597em 0;
+}
+
+// Fibonacci scale factor 5
+h3 {
+	font-size: 1.63636em;
+	padding: 1.37em 0;
 }
 
 a {
