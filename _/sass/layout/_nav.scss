@@ -1,8 +1,23 @@
+$nav-width: 260px;
+
+$nav-header-height: $header-height;
+$nav-header-margin: 5px;
+
+$nav-item-margin: 10px;
+$nav-item-padding: 10px;
+
 .l-nav {
+	overflow: hidden;
+	font-size: 120%;
 	background-color: $l-grey;
 
 	.nav-header {
-		@include calc(height, "#{$header-height} - #{$}");
+		@include calc(width, "#{$nav-width} - 2*#{$nav-header-margin}");
+		@include calc(height, "#{$nav-header-height} - 2*#{$nav-header-margin}");
+
+		margin: $nav-header-margin;
+		
+		border-radius: 2px;
 
 		background-color: $off-white;
 	}
@@ -10,13 +25,19 @@
 	.snap-drawer {
 		// account for nav header
 		padding-top: $header-height;
+		overflow: hidden;
+		@include calc(width, "#{$nav-width}");
 		ul {
 			//
 			li {
-				width: 100%;
+				@include calc(width, "#{$nav-width} - 2*#{$nav-item-margin}");
 
+				margin: 0 $nav-item-margin;
+				padding: $nav-item-padding 0;
 				border-top: solid $off-white 1px;
-				border-bottom: solid $off-white 1px;
+				&:last-child {
+					//border-bottom: solid $off-white 1px;
+				}
 			}
 		}
 	}
