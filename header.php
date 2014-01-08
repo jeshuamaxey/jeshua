@@ -108,6 +108,7 @@
 <body <?php body_class(); ?>>
 	
 	<nav id="nav" role="navigation" class="l-nav snap-drawers">
+			<div class="nav-header">Jeshua Maxey</div>
 			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'snap-drawer-left') );?>
 	</nav>
 

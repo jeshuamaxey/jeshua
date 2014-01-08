@@ -1,12 +1,22 @@
 .l-nav {
-	background-color: $off-white;
+	background-color: $l-grey;
 
-	.snap-draw {
-		//
+	.nav-header {
+		@include calc(height, "#{$header-height} - #{$}");
+
+		background-color: $off-white;
+	}
+
+	.snap-drawer {
+		// account for nav header
+		padding-top: $header-height;
 		ul {
 			//
 			li {
-				
+				width: 100%;
+
+				border-top: solid $off-white 1px;
+				border-bottom: solid $off-white 1px;
 			}
 		}
 	}
