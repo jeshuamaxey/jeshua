@@ -33,9 +33,9 @@ s
 
 // Compile sass files
 gulp.task('sass', function () {
-    gulp.src('./_/sass/style.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./'));
+    gulp.src('_/sass/style.scss')
+      .pipe(sass({ includePaths : ['_/sass/'] }))
+      .pipe(gulp.dest(''));
 });
 
 // The default task (called when you run `gulp`)
