@@ -1,6 +1,16 @@
+/*
+*
+*/
+
+@font-face {
+	font-family: halion;
+	src: url('fonts/halion.ttf'),
+     	 url('fonts/halion.svg'); /* IE4+ */
+}
+
 /* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
 body {
-	font: 13px Helmet, Freesans, sans-serif;
+	font: 13px halion, serif;
 	color: $black;
 }
 
