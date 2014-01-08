@@ -1,48 +1,7 @@
-/*#wrapper {width: 960px; margin: 20px auto;}*/
-
-header {
-	position: fixed;
-	z-index: 10;
-	right: 0;
-	left: 0;
-	top: 0;
-
-	height: 40px;
-
-	background-color: $white;
-
-	.site-title, .site-description {
-		text-align: right;
-		color: $black;
-	}
+ol.commentlist {
+	list-style: none;
 }
 
-.content {
-	padding-top: 40px;
-	background-color: $black;
-	color: $white;
-}
-
-.post {}
-
-.entry-content {}
-.entry-content a {}
-.entry-content a:hover {}
-
-#meta {}
-.postmetadata {}
-
-#sidebar {}
-
-.navgation {}
-.next-posts {}
-.prev-posts {}
-
-#searchform {}
-#s {}
-#searchsubmt {}
-	
-ol.commentlist {list-style: none;}
 ol.commentlist li {}
 ol.commentlist li.alt {}
 ol.commentlist li.bypostauthor {}

@@ -6,7 +6,7 @@ Author: Monkey Do! + @ckhicks
 Author URI: http://monkeydo.biz
 Version: 2.0
 */
-/* RESET */
+/* BASE */
 /*
 	HTML5 Reset :: style.css
 	----------------------------------------------------------
@@ -190,73 +190,28 @@ button {
 .clearfix {
   zoom: 1; }
 
-/* HELPERS */
-.pull-right {
-  float: right; }
+/*
+*	Default styles for elements used throughout the site
+*/
+header {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 40px;
+  color: #2b2b27;
+  background-color: #ffffe5; }
 
-.pull-left {
-  float: left; }
-
-.scrollable {
-  overflow: auto;
-  -webkit-transition-property: top, bottom;
-  transition-property: top, bottom;
-  -webkit-transition-duration: .2s, .2s;
-  transition-duration: .2s, .2s;
-  -webkit-transition-timing-function: linear, linear;
-  transition-timing-function: linear, linear;
-  -webkit-overflow-scrolling: touch; }
-
-/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.chromeframe {
-  position: absolute;
-  top: 0; }
-
-/* BASE */
-/* TYPOGRAPHY */
 /* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
 body {
-  font: 13px Helmet, Freesans, sans-serif; }
-
-/* We like off-black for text. */
-body, select, input, textarea {
+  font: 13px Helmet, Freesans, sans-serif;
   color: #2b2b27; }
 
 a {
   color: #bf503b; }
   a:hover {
     color: #bf503b; }
-
-/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
-::-moz-selection {
-  background: #fcd700;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #fcd700;
-  color: #fff;
-  text-shadow: none; }
-
-/*	j.mp/webkit-tap-highlight-color */
-a:link {
-  -webkit-tap-highlight-color: #fcd700; }
-
-ins {
-  background-color: #fcd700;
-  color: #000;
-  text-decoration: none; }
-
-mark {
-  background-color: #fcd700;
-  color: #000;
-  font-style: italic;
-  font-weight: bold; }
 
 /* Mozilla dosen't style place holders by default */
 input:-moz-placeholder {
@@ -265,24 +220,14 @@ input:-moz-placeholder {
 textarea:-moz-placeholder {
   color: #a9a9a9; }
 
-/* CONTENT (MOBILE FIRST STYLES) */
-/*#wrapper {width: 960px; margin: 20px auto;}*/
-header {
-  position: fixed;
-  z-index: 10;
-  right: 0;
-  left: 0;
-  top: 0;
-  height: 40px;
-  background-color: #ffffe5; }
-  header .site-title, header .site-description {
-    text-align: right;
-    color: #2b2b27; }
-
-.content {
+/* LAYOUT */
+.l-content {
   padding-top: 40px;
   background-color: #2b2b27;
   color: #ffffe5; }
+
+.l-nav {
+  background-color: #e6e6ce; }
 
 ol.commentlist {
   list-style: none; }
@@ -335,89 +280,51 @@ ol.commentlist li.odd {
 ol.commentlist li.parent {
   border-left: 5px solid #111; }
 
-/* CONTENT (LARGER SCREENS) */
-/* Media queries!
--------------------------------------------------------------------------------*/
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-/* NAV */
+/* MODULE */
+/*
+*	Layout of a single page view of a blog entry
+*/
+.header .site-title, .header .site-description {
+  text-align: right;
+  color: #2b2b27; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.scrollable {
+  overflow: auto;
+  -webkit-transition-property: top, bottom;
+  transition-property: top, bottom;
+  -webkit-transition-duration: .2s, .2s;
+  transition-duration: .2s, .2s;
+  -webkit-transition-timing-function: linear, linear;
+  transition-timing-function: linear, linear;
+  -webkit-overflow-scrolling: touch; }
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.chromeframe {
+  position: absolute;
+  top: 0; }
+
 .nav-toggle {
   font-size: 100%;
   color: #2b2b27; }
   .nav-toggle:hover {
     curor: pointer; }
 
-.nav {
-  background-color: #e6e6ce; }
-
+/* STATE */
+/* Media queries!
+-------------------------------------------------------------------------------*/
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 /* VENDOR */
-/*
-html, body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-*/
-.snap-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  z-index: 2;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.snap-drawers {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto; }
-
-.snap-drawer {
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: 0;
-  left: auto;
-  width: 265px;
-  height: auto;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: width 0.3s ease;
-  -moz-transition: width 0.3s ease;
-  -ms-transition: width 0.3s ease;
-  -o-transition: width 0.3s ease;
-  transition: width 0.3s ease; }
-
-.snap-drawer-left {
-  left: 0;
-  z-index: 1; }
-
-.snap-drawer-right {
-  right: 0;
-  z-index: 1; }
-
-.snapjs-left .snap-drawer-right,
-.snapjs-right .snap-drawer-left {
-  display: none; }
-
-.snapjs-expand-left .snap-drawer-left,
-.snapjs-expand-right .snap-drawer-right {
-  width: 100%; }
-
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -1750,3 +1657,71 @@ html, body {
 
 .fa-plus-square-o:before {
   content: "\f196"; }
+
+/*
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+*/
+.snap-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.snap-drawers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto; }
+
+.snap-drawer {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  width: 265px;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  transition: width 0.3s ease; }
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1; }
+
+.snap-drawer-right {
+  right: 0;
+  z-index: 1; }
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none; }
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%; }

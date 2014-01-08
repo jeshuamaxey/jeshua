@@ -1,0 +1,20 @@
+/*
+*	Default styles for elements used throughout the site
+*/
+
+body {
+	
+}
+
+header {
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	left: 0;
+	top: 0;
+
+	height: 40px;
+
+	color: $black;
+	background-color: $white;
+}

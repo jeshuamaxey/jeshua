@@ -107,14 +107,14 @@
 
 <body <?php body_class(); ?>>
 	
-	<nav id="nav" role="navigation" class="nav snap-drawers">
+	<nav id="nav" role="navigation" class="l-nav snap-drawers">
 			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'snap-drawer-left') );?>
 	</nav>
 
-	<div id="content" class="content snap-content">
+	<div id="content" class="l-content snap-content">
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
-	<header id="header" role="banner">
+	<header id="header" class="header" role="banner">
 		<span class="nav-toggle pull-left"><i class="fa fa-bars"></i></span>
 		<h1 class="site-title">
 			<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"

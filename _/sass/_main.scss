@@ -1,0 +1,35 @@
+/*   
+Theme Name: The HTML5 Reset Theme
+Theme URI: http://html5reset.org
+Description: A style-free theme to get you started on an HTML5-based WordPress theme of your own.
+Author: Monkey Do! + @ckhicks
+Author URI: http://monkeydo.biz
+Version: 2.0
+*/
+
+/* BASE */
+@import 'base/_reset';
+@import 'base/_vars';
+@import 'base/_base';
+@import 'base/_typography';
+
+/* LAYOUT */
+@import 'layout/_content';
+@import 'layout/_nav';
+@import 'layout/_post';
+@import 'layout/_comments';
+
+/* MODULE */
+@import 'modules/_entry-content';
+@import 'modules/_header';
+@import 'modules/_helpers';
+@import 'modules/_nav-toggle';
+@import 'modules/_search';
+
+/* STATE */
+@import 'state/_media-queries';
+@import 'state/_print';
+
+/* VENDOR */
+@import 'vendor/font-awesome';
+@import 'vendor/snap';
