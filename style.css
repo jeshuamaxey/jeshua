@@ -1610,6 +1610,17 @@ header {
 *	Typography is in line with the golden ration derived from the Fibonacci sequence
 * the ratio of H1:H1:H3 is 13:8:5
 */
+/**
+
+body { font-size:100%; line-height:1.33333; text-align:center; }
+#page { margin:0 auto; border:1px solid #fff; width:40.5em; min-height:57.2756em; }
+#textblock { margin: -2.0290695454545435em 9em 9em 4.5em; }
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:4.27273em; padding:1.36142em 0; }
+h2 { font-size:2.63636em; padding:1.35597em 0; }
+h3 { font-size:1.63636em; padding:1.37em 0; }
+
+**/
 @font-face {
   font-family: halion;
   src: url("fonts/halion.ttf"), url("fonts/halion.svg");
@@ -1742,6 +1753,9 @@ ol.commentlist li.parent {
 /*
 *	Layout of a single page view of a blog entry
 */
+.entry-content p::first-line {
+  text-transform: uppercase; }
+
 .header .site-title, .header .site-description {
   font-size: 1.63636em;
   padding: 0.22em 0;
