@@ -7,38 +7,57 @@ $nav-item-margin: 10px;
 $nav-item-padding: 10px;
 
 .l-nav {
-	overflow: hidden;
-	font-size: 120%;
-	background-color: $l-grey;
+	background-color: hotpink;
 
-	.nav-header {
-		@include calc(width, "#{$nav-width} - 2*#{$nav-header-margin}");
-		@include calc(height, "#{$nav-header-height} - 2*#{$nav-header-margin}");
-
-		margin: $nav-header-margin;
-		
-		border-radius: 2px;
-
-		background-color: $off-white;
-	}
-
-	.snap-drawer {
-		// account for nav header
-		padding-top: $header-height;
-		overflow: hidden;
-		@include calc(width, "#{$nav-width}");
-		ul {
-			//
-			li {
-				@include calc(width, "#{$nav-width} - 2*#{$nav-item-margin}");
-
-				margin: 0 $nav-item-margin;
-				padding: $nav-item-padding 0;
-				border-top: solid $off-white 1px;
-				&:last-child {
-					//border-bottom: solid $off-white 1px;
-				}
-			}
-		}
-	}
+	transition: .2s all ease;			
+	width: 100%;
+	min-height: 100%;
 }
+
+.no-js .l-nav {
+	transition: .2s all ease;			
+	width: 90%;
+	padding: 5%;
+}
+
+.js .l-nav {
+	margin-left: -100%;
+	float: left;
+}
+
+// .l-nav {
+// 	overflow: hidden;
+// 	font-size: 120%;
+// 	background-color: $l-grey;
+
+// 	.nav-header {
+// 		@include calc(width, "#{$nav-width} - 2*#{$nav-header-margin}");
+// 		@include calc(height, "#{$nav-header-height} - 2*#{$nav-header-margin}");
+
+// 		margin: $nav-header-margin;
+		
+// 		border-radius: 2px;
+
+// 		background-color: $off-white;
+// 	}
+
+// 	.snap-drawer {
+// 		// account for nav header
+// 		padding-top: $header-height;
+// 		overflow: hidden;
+// 		@include calc(width, "#{$nav-width}");
+// 		ul {
+// 			//
+// 			li {
+// 				@include calc(width, "#{$nav-width} - 2*#{$nav-item-margin}");
+
+// 				margin: 0 $nav-item-margin;
+// 				padding: $nav-item-padding 0;
+// 				border-top: solid $off-white 1px;
+// 				&:last-child {
+// 					//border-bottom: solid $off-white 1px;
+// 				}
+// 			}
+// 		}
+// 	}
+//}

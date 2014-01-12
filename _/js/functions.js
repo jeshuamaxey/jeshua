@@ -2,7 +2,7 @@
 var j = j || {};
 
 j.main = function() {
-	j.setupNav();
+	//j.setupNav();
 	j.setupHeader();
 };
 

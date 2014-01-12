@@ -1,0 +1,18 @@
+.l-sidebar {
+	background-color: yellow;
+
+	transition: .2s all ease;			
+	width: 100%;
+	min-height: 100%;
+}
+
+.no-js .l-sidebar {
+	transition: .2s all ease;			
+	width: 90%;
+	padding: 5%;
+}
+
+.js .l-sidebar {
+	margin-right: -200%;
+	float: left;
+}

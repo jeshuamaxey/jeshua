@@ -5,7 +5,7 @@
  * @since HTML5 Reset 2.0
  */
 ?>
- <div id="sidebar">
+ <div id="sidebar" class="l-sidebar">
 
     <?php if (!function_exists('dynamic_sidebar') && !dynamic_sidebar('Sidebar Widgets')) : else : ?>
     

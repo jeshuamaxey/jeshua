@@ -1341,74 +1341,6 @@ Version: 2.0
 .fa-plus-square-o:before {
   content: "\f196"; }
 
-/*
-html, body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-*/
-.snap-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  z-index: 2;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.snap-drawers {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto; }
-
-.snap-drawer {
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: 0;
-  left: auto;
-  width: 265px;
-  height: auto;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: width 0.3s ease;
-  -moz-transition: width 0.3s ease;
-  -ms-transition: width 0.3s ease;
-  -o-transition: width 0.3s ease;
-  transition: width 0.3s ease; }
-
-.snap-drawer-left {
-  left: 0;
-  z-index: 1; }
-
-.snap-drawer-right {
-  right: 0;
-  z-index: 1; }
-
-.snapjs-left .snap-drawer-right,
-.snapjs-right .snap-drawer-left {
-  display: none; }
-
-.snapjs-expand-left .snap-drawer-left,
-.snapjs-expand-right .snap-drawer-right {
-  width: 100%; }
-
 /* BASE */
 /*
 	HTML5 Reset :: style.css
@@ -1661,42 +1593,50 @@ textarea:-moz-placeholder {
 
 /* LAYOUT */
 .l-content {
-  padding: 10px;
-  padding-top: 40px;
+  transition: .2s all ease;
+  width: 100%;
+  padding-top: 40px; }
+
+.no-js .l-content {
+  transition: .2s all ease;
+  width: 90%;
+  padding: 5%; }
+
+.js .l-content {
+  margin-left: 0;
+  float: left;
   background-color: #2b2b27;
   color: #ffffe5; }
 
 .l-nav {
-  overflow: hidden;
-  font-size: 120%;
-  background-color: #bfbfac; }
-  .l-nav .nav-header {
-    width: -moz-calc(260px - 2*5px);
-    width: -o-calc(260px - 2*5px);
-    width: -webkit-calc(260px - 2*5px);
-    width: calc(260px - 2*5px);
-    height: -moz-calc(40px - 2*5px);
-    height: -o-calc(40px - 2*5px);
-    height: -webkit-calc(40px - 2*5px);
-    height: calc(40px - 2*5px);
-    margin: 5px;
-    border-radius: 2px;
-    background-color: #e6e6ce; }
-  .l-nav .snap-drawer {
-    padding-top: 40px;
-    overflow: hidden;
-    width: -moz-calc(260px);
-    width: -o-calc(260px);
-    width: -webkit-calc(260px);
-    width: calc(260px); }
-    .l-nav .snap-drawer ul li {
-      width: -moz-calc(260px - 2*10px);
-      width: -o-calc(260px - 2*10px);
-      width: -webkit-calc(260px - 2*10px);
-      width: calc(260px - 2*10px);
-      margin: 0 10px;
-      padding: 10px 0;
-      border-top: solid #e6e6ce 1px; }
+  background-color: hotpink;
+  transition: .2s all ease;
+  width: 100%;
+  min-height: 100%; }
+
+.no-js .l-nav {
+  transition: .2s all ease;
+  width: 90%;
+  padding: 5%; }
+
+.js .l-nav {
+  margin-left: -100%;
+  float: left; }
+
+.l-sidebar {
+  background-color: yellow;
+  transition: .2s all ease;
+  width: 100%;
+  min-height: 100%; }
+
+.no-js .l-sidebar {
+  transition: .2s all ease;
+  width: 90%;
+  padding: 5%; }
+
+.js .l-sidebar {
+  margin-right: -200%;
+  float: left; }
 
 ol.commentlist {
   list-style: none; }
@@ -1798,6 +1738,25 @@ ol.commentlist li.parent {
     cursor: pointer; }
 
 /* STATE */
+.active-nav .l-nav {
+  margin-left: 0;
+  float: left; }
+
+.active-nav .l-content {
+  margin-left: 100%; }
+
+.active-nav .l-sidebar {
+  margin-right: -200%; }
+
+.active-sidebar .l-nav {
+  margin-left: -100%; }
+
+.active-sidebar .l-content {
+  margin-left: -100%; }
+
+.active-sidebar .l-sidebar {
+  margin-left: 0; }
+
 /* Media queries!
 -------------------------------------------------------------------------------*/
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */

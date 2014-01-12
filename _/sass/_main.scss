@@ -12,7 +12,7 @@ Version: 2.0
 
 /* VENDOR */
 @import 'vendor/font-awesome';
-@import 'vendor/snap';
+//@import 'vendor/snap';
 
 /* BASE */
 @import 'base/_reset';
@@ -23,6 +23,7 @@ Version: 2.0
 /* LAYOUT */
 @import 'layout/_content';
 @import 'layout/_nav';
+@import 'layout/_sidebar';
 @import 'layout/_post';
 @import 'layout/_comments';
 
@@ -34,5 +35,7 @@ Version: 2.0
 @import 'modules/_search';
 
 /* STATE */
+@import 'state/_access_left';
+@import 'state/_access_right';
 @import 'state/_media-queries';
 @import 'state/_print';
