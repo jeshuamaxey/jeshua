@@ -3,6 +3,9 @@ var j = j || {};
 
 j.main = function() {
 	//j.setupNav();
+	$('.nav-toggle').on('click', function() {
+		$('body').toggleClass('active-nav');
+	})
 	j.setupHeader();
 };
 
