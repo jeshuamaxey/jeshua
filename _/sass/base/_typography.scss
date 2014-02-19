@@ -25,9 +25,11 @@ $line-height: 1.333;		//	4/3 * $font-size
 }
 
 html, body {
-	font: $font-size halion, serif;
+	//font: $font-size halion, serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: $regular;
 	line-height: $line-height;
-	color: $black;
+	color: $clouds;
 }
 
 h1, h2, h3 {
@@ -38,25 +40,31 @@ h1, h2, h3 {
 // Fibonacci scale factor 13
 h1 {
 	font-size: 4.27273em;
+	font-weight: $regular;
 	padding: 1.36142em 0;
 }
 
 // Fibonacci scale factor 8
 h2 {
 	font-size: 2.63636em;
+	font-weight: $regular;
 	padding: 1.35597em 0;
 }
 
 // Fibonacci scale factor 5
 h3 {
 	font-size: 1.63636em;
+	font-weight: $regular;
 	padding: 1.37em 0;
 }
 
 a {
-	color: $red;
+	color: $silver;
+
+	text-decoration: none;
 	&:hover {
-		color: $red;
+		color: $silver;
+		text-decoration: underline;
 	}
 }
 
