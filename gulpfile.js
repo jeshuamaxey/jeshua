@@ -33,7 +33,7 @@ s
 
 // Compile sass files
 gulp.task('sass', function () {
-    gulp.src('_/sass/style.scss')
+    gulp.src('_/sass/_main.scss')
       .pipe(sass({ includePaths : ['_/sass/'] }))
       .pipe(gulp.dest(''));
 });
@@ -45,7 +45,7 @@ gulp.task('default', function() {
 
   // Watch files and run tasks if they change
 
-  gulp.watch(['./_/sass/style.scss'], function() {
+  gulp.watch(['./_/sass/_main.scss'], function() {
     gulp.run('sass');
   })
 });

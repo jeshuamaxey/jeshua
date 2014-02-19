@@ -11,7 +11,6 @@
 <!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
-<!-- the "no-js" class is for Modernizr. --> 
 
 <head id="<?php echo of_get_option('meta_headid'); ?>" data-template-set="html5-reset-wordpress-theme">
 
@@ -107,16 +106,16 @@
 
 <body <?php body_class(); ?>>
 	
-	<nav id="nav" role="navigation" class="l-nav snap-drawers">
+	<nav id="nav" role="navigation" class="l-nav">
 			<div class="nav-header">Jeshua Maxey</div>
-			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'snap-drawer-left') );?>
+			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'xx-snap-drawer-left-xx') );?>
 	</nav>
 
-	<div id="content" class="l-content snap-content">
-	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+	<div id="content" class="l-content">
 
 	<header id="header" class="header" role="banner">
-		<span class="nav-toggle pull-left"><i class="fa fa-bars"></i></span>
+		<span class="icn-toggle nav-toggle pull-left"><i class="fa fa-bars"></i></span>
+		<span class="icn-toggle sidebar-toggle"><i class="fa fa-home"></i></span>
 		<h1 class="site-title">
 			<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"
 					title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"

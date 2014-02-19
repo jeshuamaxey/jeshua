@@ -1,7 +1,9 @@
-.nav-toggle {
+.icn-toggle {
 	font-size: 180%;
 	color: $black;
-	padding: 0.2em;
+	padding: 0.1em;
+
+	float: left;
 
 	&:hover {
 		cursor: pointer;
