@@ -1595,16 +1595,15 @@ textarea:-moz-placeholder {
 .l-content {
   transition: .3s all ease;
   width: 100%;
-  padding-top: 40px; }
+  padding-top: 40px;
+  background-color: #2b2b27;
+  color: #ffffe5; }
 
 .no-js .l-content {
-  width: 90%;
   padding: 5%; }
 
 .js .l-content {
-  margin-left: 0%;
-  background-color: #2b2b27;
-  color: #ffffe5; }
+  margin-left: 0%; }
 
 .l-nav {
   background-color: hotpink;
@@ -1613,7 +1612,6 @@ textarea:-moz-placeholder {
   min-height: 100%; }
 
 .no-js .l-nav {
-  width: 90%;
   padding: 5%; }
 
 .js .l-nav {
@@ -1627,7 +1625,6 @@ textarea:-moz-placeholder {
   min-height: 100%; }
 
 .no-js .l-sidebar {
-  width: 90%;
   padding: 5%; }
 
 .js .l-sidebar {
