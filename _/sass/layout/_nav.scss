@@ -19,12 +19,19 @@ $nav-item-padding: 10px;
 
 	//nav list
 	ul {
-		padding-left: 5%;
-
 		li {
-			border-top: solid $midnight-blue 1px;
-			&:hover {
+			
+			transition: background-color 0.1s ease;
 
+			padding-left: 5%;
+
+			border-top: solid $midnight-blue 1px;
+			border-bottom: solid $midnight-blue 1px;
+			border-radius: 0 1em 1em 0;
+
+			&:hover {
+				border-right: solid $midnight-blue 1px;
+				background-color: $pumpkin;
 			}
 			a {
 				//
