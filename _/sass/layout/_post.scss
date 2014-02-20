@@ -1,24 +1,101 @@
+$p-bottom: 1.35597em;
+
 .post {
 	width: 100%;
 
-	padding-bottom: 1.35597em;
-	border-radius: 0 4em;
+	//set z-index greater than :before & :after
+	position: relative;
+	//top: -4em;
+	//first 50 children set increasing z-index
+	$i: 0;
+	$max: 50;
+	@while $i < $max {
+		&:nth-child(#{$i}) {
+			z-index: #{$i + 10};
+			//@include calc('top', $i * -4em);
+		}
+	   $i: $i +1;
+	}
+	
+	//z-index: 10;
+	
+	@include calc('padding-bottom', $p-bottom);
+	border-radius: 0em 4em;
+
+	// &:before {
+	// 	content: '';
+	// 	display: block;
+		
+	// 	position: relative;
+	// 	z-index: 5;
+		
+	// 	@include calc('top', -2.96*$p-bottom);
+	// 	@include calc('left', 0);
+
+	// 	width: 100%;
+	// 	height: 4em;
+
+	// 	background: hotpink;
+	// }
 
 	&:after {
 		content: '';
+		display: block;
+		
 		position: relative;
-		background: hotpink;
+		z-index: 5;
+
+		@include calc('bottom', -3.96*$p-bottom);
+		//@include calc('right', -25.11*$p-bottom);
+		
+		//width: 100%;
+		//border-right-width: 50%;
+		height: 4em;
+
+		background: hotpink;//$midnight-blue;
 	}
 }
 
-.post:nth-child(3n+2) {
+.post:nth-child(4n) {
 	background: $belize-hole;
+	&:before, &:after {
+		background: $belize-hole;
+		// background-image: linear-gradient(90deg, red 50%, black 50%);
+	 //  background-position: 0 0, 100% 0;
+	 //  background-repeat: no-repeat;
+	 //  background-size: 100% 100%;
+	}
 }
 
-.post:nth-child(3n+3) {
+.post:nth-child(4n+1) {
 	background: $pomegranite;
+	&:before, &:after {
+			background: $pomegranite;
+		// background-image: linear-gradient(90deg, red 50%, black 50%);
+	 //  background-position: 0 0, 100% 0;
+	 //  background-repeat: no-repeat;
+	 //  background-size: 100% 100%;
+	}
 }
 
-.post:nth-child(3n+1) {
+.post:nth-child(4n+2) {
 	background: $amethyst;
+	&:before, &:after {
+			background: $amethyst;
+		// background-image: linear-gradient(90deg, red 50%, black 50%);
+	 //  background-position: 0 0, 100% 0;
+	 //  background-repeat: no-repeat;
+	 //  background-size: 100% 100%;
+	}
+}
+
+.post:nth-child(4n+3) {
+	background: $tuquoise;
+	&:before, &:after {
+			background: $tuquoise;
+		// background-image: linear-gradient(90deg, red 50%, black 50%);
+	 //  background-position: 0 0, 100% 0;
+	 //  background-repeat: no-repeat;
+	 //  background-size: 100% 100%;
+	}
 }
