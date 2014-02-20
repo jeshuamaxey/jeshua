@@ -1,24 +1,14 @@
 $p-bottom: 1.35597em;
 
-// .post-wrapper {
-
-// }
-
 .post-wrapper {
 	width: 100%;
-
-	//set z-index greater than :before & :after
-	position: relative;
-	
-	z-index: 10;
-	
 }
 
 .post {
 	width: 100%;
 	height: 100%;
 	
-	padding-bottom: 4em;
+	padding:0 0.8em 4em 0.8em;
 
 	border-radius: 0em 4em;
 }
