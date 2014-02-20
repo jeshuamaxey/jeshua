@@ -1,5 +1,7 @@
 .header {
 	.site-title, .site-description {
+		position: relative;
+		z-index: 30;
 		font-size:  1.63636em; //1.97273em;
 		padding: 0.22em 0;
 		
