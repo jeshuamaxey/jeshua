@@ -107,8 +107,7 @@
 <body <?php body_class(); ?>>
 	
 	<nav id="nav" role="navigation" class="l-nav">
-			<div class="nav-header">Jeshua Maxey</div>
-			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'xx-snap-drawer-left-xx') );?>
+			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => '') );?>
 	</nav>
 
 	<div id="content" class="l-content">

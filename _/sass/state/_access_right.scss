@@ -1,4 +1,4 @@
-.active-nav {
+.active-sidebar {
 	overflow: hidden;
 }
 
@@ -6,9 +6,9 @@
 	margin-left: -200%;
 }
 .active-sidebar .l-content {
-	float: left;
+	float: left; //THIS IS THE PESKY FLOAT
 	margin-left: -100%;
 }
 .active-sidebar .l-sidebar {
-	margin-left: 0%;
+	margin-right: 0%;
 }

@@ -8,10 +8,11 @@ var sass = require('gulp-sass');
 
 // Compile sass files
 gulp.task('sass', function () {
-    gulp.src('_/sass/_main.scss')
+    gulp.src('_/sass/style.scss')
       .pipe(sass({ includePaths : ['_/sass/'] }))
+      //.pipe(sass())
       .on('error', gutil.log)
-      .pipe(gulp.dest(''));
+      .pipe(gulp.dest('./'));
 });
 
 // The default task (called when you run `gulp`)
@@ -21,7 +22,7 @@ gulp.task('default', function() {
 
   // Watch files and run tasks if they change
 
-  gulp.watch(['./_/sass/*'], function() {
+  gulp.watch(['./_/sass/**/*.scss'], function() {
     gulp.run('sass');
   })
 });

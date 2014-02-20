@@ -7,11 +7,34 @@ $nav-item-margin: 10px;
 $nav-item-padding: 10px;
 
 .l-nav {
-	background-color: hotpink;
+	background-color: $wet-asphalt;
 
 	transition: .3s all ease;			
 	width: 100%;
 	min-height: 100%;
+	//account for fixed header 40px tall
+	padding-top: 40px;
+
+	font-size:  1.63636em;
+
+	//nav list
+	ul {
+		padding-left: 5%;
+
+		li {
+			border-top: solid $midnight-blue 1px;
+			&:hover {
+
+			}
+			a {
+				//
+				&:hover {
+					text-decoration: none;
+					color: $clouds;
+				}
+			}
+		}
+	}
 }
 
 .no-js .l-nav {

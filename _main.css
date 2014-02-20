@@ -1,10 +1,10 @@
 /*   
-Theme Name: The HTML5 Reset Theme
-Theme URI: http://html5reset.org
-Description: A style-free theme to get you started on an HTML5-based WordPress theme of your own.
-Author: Monkey Do! + @ckhicks
-Author URI: http://monkeydo.biz
-Version: 2.0
+Theme Name: Jeshua 3
+Theme URI: http://jeshua.co
+Description: Build by Jeshua Maxey for jeshua.co
+Author: Jeshua Maxey - @jeshuamaxey
+Author URI: http://jeshua.co
+Version: 1.0
 */
 /* MIXINS */
 /* VENDOR */
@@ -1482,8 +1482,8 @@ header {
   left: 0;
   top: 0;
   height: 40px;
-  color: #2c3e50;
-  background-color: #ecf0f1; }
+  color: #ecf0f1;
+  background-color: #2c3e50; }
 
 /*
 *	Typography is in line with the golden ration derived from the Fibonacci sequence
@@ -1506,9 +1506,10 @@ h3 { font-size:1.63636em; padding:1.37em 0; }
   /* IE4+ */ }
 
 html, body {
-  font: 100% halion, serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   line-height: 1.333;
-  color: #2c3e50; }
+  color: #ecf0f1; }
 
 h1, h2, h3 {
   margin-top: 0;
@@ -1516,20 +1517,25 @@ h1, h2, h3 {
 
 h1 {
   font-size: 4.27273em;
+  font-weight: 300;
   padding: 1.36142em 0; }
 
 h2 {
   font-size: 2.63636em;
+  font-weight: 300;
   padding: 1.35597em 0; }
 
 h3 {
   font-size: 1.63636em;
+  font-weight: 300;
   padding: 1.37em 0; }
 
 a {
-  color: #e67e22; }
+  color: #bdc3c7;
+  text-decoration: none; }
   a:hover {
-    color: #e67e22; }
+    color: #bdc3c7;
+    text-decoration: underline; }
 
 /* Mozilla dosen't style place holders by default */
 input:-moz-placeholder {
@@ -1566,7 +1572,7 @@ textarea:-moz-placeholder {
   float: left; }
 
 .l-sidebar {
-  background-color: yellow;
+  background-color: #f1c40f;
   transition: 0.3s all ease;
   width: 100%;
   min-height: 100%; }
@@ -1577,6 +1583,19 @@ textarea:-moz-placeholder {
 .js .l-sidebar {
   margin-right: -200%;
   float: left; }
+
+.post {
+  width: 100%;
+  padding: 5px; }
+
+.post:nth-child(3n+2) {
+  background: #2980b9; }
+
+.post:nth-child(3n+3) {
+  background: #c0392b; }
+
+.post:nth-child(3n+1) {
+  background: #9b59b6; }
 
 ol.commentlist {
   list-style: none; }
@@ -1667,7 +1686,7 @@ ol.commentlist li.parent {
   font-size: 1.63636em;
   padding: 0.22em 0;
   text-align: right;
-  color: #2c3e50; }
+  color: #ecf0f1; }
 .header .site-title a {
   text-decoration: none; }
 
@@ -1699,7 +1718,7 @@ ol.commentlist li.parent {
 
 .icn-toggle {
   font-size: 180%;
-  color: #2c3e50;
+  color: #ecf0f1;
   padding: 0.1em;
   float: left; }
   .icn-toggle:hover {
@@ -1708,7 +1727,11 @@ ol.commentlist li.parent {
 
 
 
+
 /* STATE */
+body.active-nav {
+  overflow: none; }
+
 .active-nav .l-nav {
   margin-left: 0%; }
 
@@ -1717,6 +1740,9 @@ ol.commentlist li.parent {
 
 .active-nav .l-sidebar {
   margin-right: -100%; }
+
+.active-nav {
+  overflow: hidden; }
 
 .active-sidebar .l-nav {
   margin-left: -200%; }

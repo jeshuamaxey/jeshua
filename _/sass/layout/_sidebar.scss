@@ -1,9 +1,12 @@
 .l-sidebar {
-	background-color: $sunflower;
-
 	transition: .3s all ease;			
 	width: 100%;
 	min-height: 100%;
+
+	//account for fixed header 40px tall
+	padding-top: 40px;
+	
+	background-color: $sunflower;
 }
 
 .no-js .l-sidebar {
