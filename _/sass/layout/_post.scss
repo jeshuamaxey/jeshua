@@ -1,7 +1,14 @@
 .post {
 	width: 100%;
 
-	padding: 5px;
+	padding-bottom: 1.35597em;
+	border-radius: 0 4em;
+
+	&:after {
+		content: '';
+		position: relative;
+		background: hotpink;
+	}
 }
 
 .post:nth-child(3n+2) {
