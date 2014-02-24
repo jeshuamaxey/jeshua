@@ -107,7 +107,10 @@
 <body <?php body_class(); ?>>
 	
 	<nav id="nav" role="navigation" class="l-nav">
-			<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => '') );?>
+		<div class="nav-header">
+			<span class="icn-toggle nav-toggle pull-left"><i class="fa fa-chevron-circle-right"></i></span>
+		</div>
+		<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => '') );?>
 	</nav>
 
 	<div id="content" class="l-content">

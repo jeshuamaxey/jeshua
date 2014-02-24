@@ -3,9 +3,6 @@
 * the ratio of H1:H1:H3 is 13:8:5
 */
 
-$font-size: 100%;				//	1.0em, 16px
-$line-height: 1.333;		//	4/3 * $font-size
-
 @font-face {
 	font-family: halion;
 	src: url('fonts/halion.ttf'),
@@ -13,10 +10,10 @@ $line-height: 1.333;		//	4/3 * $font-size
 }
 
 html, body {
-	//font: $font-size halion, serif;
+	font-size: $base-font-size;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: $regular;
-	line-height: $line-height;
+	line-height: $base-line-height;
 	color: $clouds;
 }
 
@@ -25,25 +22,22 @@ h1, h2, h3 {
 	margin-bottom:0;
 }
 
-// Fibonacci scale factor 13
 h1 {
-	font-size: 4.27273em;
+	font-size: 3.5em;
 	font-weight: $regular;
-	padding: 1.36142em 0;
+	padding-bottom: 1.36142em;
 }
 
-// Fibonacci scale factor 8
 h2 {
 	font-size: 2.63636em;
 	font-weight: $regular;
-	padding: 1.35597em 0;
+	padding-bottom: 1.35597em;
 }
 
-// Fibonacci scale factor 5
 h3 {
 	font-size: 1.63636em;
 	font-weight: $regular;
-	padding: 1.37em 0;
+	padding-bottom: 1.37em;
 }
 
 a {

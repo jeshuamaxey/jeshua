@@ -7,14 +7,93 @@ body {
 }
 
 header {
-	position: fixed;
-	z-index: 10;
-	right: 0;
-	left: 0;
-	top: 0;
+	// position: fixed;
+	// z-index: 10;
+	// right: 0;
+	// left: 0;
+	// top: 0;
 
 	height: $header-height;
 
 	color: $clouds;
 	background-color: $midnight-blue;
+}
+
+/*
+* Text elements
+*/
+
+p {
+	@include calc('padding-bottom', $base-line-height * 2em);
+}
+
+ul {
+	margin-left: 5%;
+	@include calc('padding-bottom', $base-line-height * 2em);
+	
+	list-style: circle outside none;
+	
+	li {
+
+	}
+}
+
+ol {
+	margin-left: 5%;
+	@include calc('padding-bottom', $base-line-height * 2em);
+	
+	list-style: lower-roman outside none;
+	
+	li {
+
+	}
+}
+
+blockquote, q {
+	width: 80%;
+	margin: auto;
+
+	font-style: italic;
+	line-height: 150%;
+
+	padding: 5%;
+
+	border: solid $clouds 1px;
+	border-radius: 0 1em;
+	
+	@include calc('padding-bottom', $base-line-height * 1em);
+	
+	p {
+		padding: 0;
+	}
+}
+
+cite {
+	padding: 1% 2%;
+
+	float: right;
+	position: relative;
+	top: -0.8em;
+	left: -0.8em;
+	
+	background-color: indianred;
+
+	border: solid $clouds 1px;
+	border-radius: 4px;
+}
+
+/*
+* Images
+*/
+
+img {
+	margin: 0;
+	
+	&.alignleft {
+		margin: 3px 10px 10px 0;
+	}
+	
+	&.alignright {
+		margin: 3px 0 10px 10px;
+	}
 }

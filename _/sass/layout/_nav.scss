@@ -12,10 +12,22 @@ $nav-item-padding: 10px;
 	transition: .3s all ease;			
 	width: 100%;
 	min-height: 100%;
-	//account for fixed header 40px tall
-	padding-top: 40px;
 
 	font-size:  1.63636em;
+
+	//
+	.nav-header {
+		height: 40px;
+		padding: 0 10px;
+		.icn-toggle {
+			font-size: 1.14em;
+			padding: 0.1em;
+			float: right;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 
 	//nav list
 	ul {
