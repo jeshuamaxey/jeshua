@@ -9,8 +9,11 @@ var sass = require('gulp-sass');
 // Compile sass files
 gulp.task('sass', function () {
     gulp.src('_/sass/style.scss')
-      .pipe(sass({ includePaths : ['_/sass/'] }))
-      //.pipe(sass())
+      .pipe(sass({
+        includePaths : ['_/sass/'],
+        sourceComments: 'map',
+        sourcemap: true
+      }))
       .on('error', gutil.log)
       .pipe(gulp.dest('./'));
 });
