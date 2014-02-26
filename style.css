@@ -1619,18 +1619,22 @@ textarea:-moz-placeholder {
       float: right; }
       .l-nav .nav-header .icn-toggle:hover {
         cursor: pointer; }
-  .l-nav ul li {
-    transition: background-color 0.1s ease;
-    padding-left: 5%;
-    border-top: solid #2c3e50 1px;
-    border-bottom: solid #2c3e50 1px;
-    border-radius: 0 1em 1em 0; }
-    .l-nav ul li:hover {
-      border-right: solid #2c3e50 1px;
-      background-color: #d35400; }
-    .l-nav ul li a:hover {
-      text-decoration: none;
-      color: #ecf0f1; }
+  .l-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .l-nav ul li {
+      transition: background-color 0.1s ease;
+      padding-left: 5%;
+      border-top: solid #2c3e50 1px;
+      border-bottom: solid #2c3e50 1px;
+      border-radius: 0 1em 1em 0; }
+      .l-nav ul li:hover {
+        border-right: solid #2c3e50 1px;
+        background-color: #d35400; }
+      .l-nav ul li a:hover {
+        text-decoration: none;
+        color: #ecf0f1; }
 
 .no-js .l-nav {
   padding: 5%; }
