@@ -1615,8 +1615,9 @@ textarea:-moz-placeholder {
     padding: 0 10px; }
     .l-nav .nav-header .icn-toggle {
       font-size: 1.14em;
-      padding: 0.1em;
-      float: right; }
+      padding: 0; }
+      .l-nav .nav-header .icn-toggle i {
+        margin-left: 0.2em; }
       .l-nav .nav-header .icn-toggle:hover {
         cursor: pointer; }
   .l-nav ul {
