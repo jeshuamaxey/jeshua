@@ -42,7 +42,7 @@
 
 <?php if ( comments_open() ) : ?>
 
-<div id="respond">
+<div id="respond" class="respond">
 
 	<h2><?php comment_form_title( 'Leave a Reply', __('Leave a Reply to %s') ); ?></h2>
 
@@ -63,18 +63,18 @@
 		<?php else : ?>
 
 			<div>
-				<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 				<label for="author"><?php _e('Name','html5reset'); ?> <?php if ($req) echo "(required)"; ?></label>
+				<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 			</div>
 
 			<div>
-				<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
 				<label for="email"><?php _e('Mail (will not be published)','html5reset'); ?> <?php if ($req) echo "(required)"; ?></label>
+				<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
 			</div>
 
 			<div>
-				<input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
 				<label for="url"><?php _e('Website','html5reset'); ?></label>
+				<input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
 			</div>
 
 		<?php endif; ?>

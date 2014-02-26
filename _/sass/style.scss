@@ -28,11 +28,12 @@ Version: 1.0
 @import 'layout/_comments';
 
 /* MODULE */
+@import 'modules/_comments';
 @import 'modules/_entry-content';
 @import 'modules/_header';
 @import 'modules/_helpers';
 @import 'modules/_icons';
-@import 'modules/_post';
+@import 'modules/_respond';
 @import 'modules/_search';
 
 /* STATE */

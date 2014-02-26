@@ -1,0 +1,35 @@
+.respond {
+	max-width: 100%;
+
+	form {
+		div {
+			margin-bottom: 1.0em;
+			label {
+				margin-bottom: 0.5em;
+			}
+			input[type=text], input[type=email], textarea {
+				max-width: 100%;
+				padding: 3%;
+				background: $wet-asphalt;	
+				color: $clouds;
+				border: solid $clouds 1px;
+				border-radius: 0.5em;
+			}
+		}
+
+		input[type=submit] {
+			background: $midnight-blue;
+			color: $clouds;
+			border: solid $clouds 1px;
+			padding: 5%;
+			border-radius: 0.5em;
+			&:hover {
+				background: $wet-asphalt;
+			}
+		}
+	}	
+}
+
+.js .respond {
+	//display: none;
+}

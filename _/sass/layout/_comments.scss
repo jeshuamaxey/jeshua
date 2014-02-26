@@ -1,43 +1,81 @@
-ol.commentlist {
-	list-style: none;
+.comments-wrapper {
+	transition: .3s all ease;
+
+	padding: 5%;
+	h2 {
+		padding-bottom: 0.45em;
+	}
 }
 
-ol.commentlist li {}
-ol.commentlist li.alt {}
-ol.commentlist li.bypostauthor {}
-ol.commentlist li.byuser {}
-ol.commentlist li.comment-author-admin {}
-ol.commentlist li.comment {border-bottom: 1px dotted #666; padding: 10px;}
-ol.commentlist li.comment div.comment-author {}
-ol.commentlist li.comment div.vcard {}
-ol.commentlist li.comment div.vcard cite.fn {font-style: normal;}
-ol.commentlist li.comment div.vcard cite.fn a.url {}
-ol.commentlist li.comment div.vcard img.avatar {float:right; margin: 0 0 10px 10px;}
-ol.commentlist li.comment div.vcard img.avatar-32 {}
-ol.commentlist li.comment div.vcard img.photo {}
-ol.commentlist li.comment div.vcard span.says {}
-ol.commentlist li.comment div.commentmetadata {}
-ol.commentlist li.comment div.comment-meta {font-size: 10px;}
-ol.commentlist li.comment div.comment-meta a {color: #ccc;}
-ol.commentlist li.comment p {}
-ol.commentlist li.comment ul {}
-ol.commentlist li.comment div.reply {font-size: 11px;}
-ol.commentlist li.comment div.reply a {font-weight: bold;}
-ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
-ol.commentlist li.comment ul.children li {}
-ol.commentlist li.comment ul.children li.alt {}
-ol.commentlist li.comment ul.children li.bypostauthor {}
-ol.commentlist li.comment ul.children li.byuser {}
-ol.commentlist li.comment ul.children li.comment {}
-ol.commentlist li.comment ul.children li.comment-author-admin {}
-ol.commentlist li.comment ul.children li.depth-2 {border-left: 5px solid #555; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-3 {border-left: 5px solid #999; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-4 {border-left: 5px solid #bbb; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-5 {}
-ol.commentlist li.comment ul.children li.odd {}
-ol.commentlist li.even {background: #fff;}
-ol.commentlist li.odd {background: #f6f6f6;}
-ol.commentlist li.parent {border-left: 5px solid #111;}
-ol.commentlist li.thread-alt {}
-ol.commentlist li.thread-even {}
-ol.commentlist li.thread-odd {}
+.commentlist {
+	// max-width: 95%;
+	margin: 0;
+
+	list-style: none;
+//	color: $wet-asphalt;
+
+	.comment {
+		margin-bottom: 1.2em;
+		padding: 0.65em;
+
+		border-radius: 0 1em;
+
+		background: $wet-asphalt;
+
+		&.alt {}
+		&.bypostauthor {}
+		&.byuser {}
+		&.comment-author-admin {}
+
+		div {
+			.comment-author {}
+			.vcard {
+				img.avatar {
+					border-radius: 0 40%;
+				}
+				cite.fn {
+					max-width: 60%;
+					top: -1.4em;
+					text-align: right;
+					background: $wet-asphalt;
+					&:hover {
+						background: $pumpkin;
+					}
+				}
+				.says {
+					display: none;
+				}
+			}
+			.commentmetadata {}
+			.comment-meta {font-size: 10px;}
+			.comment-meta a {color: #ccc;}
+		}
+	}
+}
+
+.js {}
+
+/*
+li.comment p {}
+li.comment ul {}
+li.comment div.reply {font-size: 11px;}
+li.comment div.reply a {font-weight: bold;}
+li.comment ul.children {list-style: none; margin: 10px 0 0;}
+li.comment ul.children li {}
+li.comment ul.children li.alt {}
+li.comment ul.children li.bypostauthor {}
+li.comment ul.children li.byuser {}
+li.comment ul.children li.comment {}
+li.comment ul.children li.comment-author-admin {}
+li.comment ul.children li.depth-2 {border-left: 5px solid #555; margin: 0 0 10px 10px;}
+li.comment ul.children li.depth-3 {border-left: 5px solid #999; margin: 0 0 10px 10px;}
+li.comment ul.children li.depth-4 {border-left: 5px solid #bbb; margin: 0 0 10px 10px;}
+li.comment ul.children li.depth-5 {}
+li.comment ul.children li.odd {}
+li.even {background: #fff;}
+li.odd {background: #f6f6f6;}
+li.parent {border-left: 5px solid #111;}
+li.thread-alt {}
+li.thread-even {}
+li.thread-odd {}
+*/

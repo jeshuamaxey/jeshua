@@ -10,9 +10,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', function () {
     gulp.src('_/sass/style.scss')
       .pipe(sass({
-        includePaths : ['_/sass/'],
-        sourceComments: 'map',
-        sourcemap: true
+        includePaths : ['_/sass/']
       }))
       .on('error', gutil.log)
       .pipe(gulp.dest('./'));

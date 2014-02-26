@@ -14,7 +14,7 @@ My third wordpress theme, built for [jeshua.co](http://jeshua.co).
 
 ### Tablet
 
-### desktop
+### Desktop
 
 ## Uses:
 

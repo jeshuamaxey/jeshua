@@ -85,32 +85,6 @@
 	}
 	add_filter( 'wp_title', 'html5reset_wp_title', 10, 2 );
 
-
-
-
-//OLD STUFF BELOW
-
-
-	// Load jQuery
-	//LOADED IN THE HTML5BP FASHION
-	// if ( !function_exists( 'core_mods' ) ) {
-	// 	function core_mods() {
-	// 		if ( !is_admin() ) {
-	// 			wp_deregister_script( 'jquery' );
-	// 			wp_register_script( 'jquery', ( "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ), false);
-	// 			wp_enqueue_script( 'jquery' );
-	// 		}
-	// 	}
-	// 	add_action( 'wp_enqueue_scripts', 'core_mods' );
-	// }
-
-	// Clean up the <head>, if you so desire.
-	//	function removeHeadLinks() {
-	//    	remove_action('wp_head', 'rsd_link');
-	//    	remove_action('wp_head', 'wlwmanifest_link');
-	//    }
-	//    add_action('init', 'removeHeadLinks');
-
 	// Custom Menu
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'html5reset' ) );
 
@@ -139,13 +113,37 @@
 
 	// Posted On
 	function posted_on() {
-		printf( __( '<span class="sep">Posted </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a> by <span class="byline author vcard">%5$s</span>', '' ),
+		// removed:
+		// by <span class="byline author vcard">%5$s</span> 
+		printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a>', '' ),
 			esc_url( get_permalink() ),
 			esc_attr( get_the_time() ),
 			esc_attr( get_the_date( 'c' ) ),
-			esc_html( get_the_date() ),
-			esc_attr( get_the_author() )
+			esc_html( get_the_date() )
+			//esc_attr( get_the_author() )
 		);
+	}
+
+	// gets the number of the post
+	// source: http://stackoverflow.com/questions/9322860/how-to-get-the-post-number-in-wordpress
+	function get_post_number($postID) {
+
+		$temp_query = $wp_query;
+		$postNumberQuery = new WP_Query('orderby=date&posts_per_page=-1');
+		$counter = 1;
+		$postCount = 0;
+		if($postNumberQuery->have_posts()) :
+			while ($postNumberQuery->have_posts()) : $postNumberQuery->the_post();
+				if ($postID == get_the_ID()){
+					$postCount = $counter;
+				} else {
+					$counter++;
+				}
+		endwhile; endif;
+		wp_reset_query();
+		$wp_query = $temp_query;
+		return $postCount;
+
 	}
 
 ?>
