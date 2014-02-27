@@ -1,8 +1,6 @@
 .l-content {
 	transition: .3s all ease;			
 	width: 100%;
-	//account for fixed header 40px tall
-	//padding-top: 40px;
 
 	background-color: $midnight-blue;
 	color: $clouds;
@@ -14,5 +12,4 @@
 
 .js .l-content {
 	margin-left: 0%;
-	//float: left;
 }

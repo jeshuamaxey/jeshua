@@ -13,6 +13,8 @@
 				
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 
+				<p class="sidebar-toggle">About this post</p>
+				
 				<div class="entry-content">
 					
 					<?php the_content(); ?>
@@ -37,7 +39,5 @@
 	<?php endwhile; endif; ?>
 
 <?php post_navigation(); ?>
-	
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -8,16 +8,18 @@ body {
 }
 
 header {
-	// position: fixed;
-	// z-index: 10;
-	// right: 0;
-	// left: 0;
-	// top: 0;
 
 	height: $header-height;
 
+	padding: 0 5px;
+	
 	color: $clouds;
 	background-color: $midnight-blue;
+}
+
+footer.copyright {
+	background-color: $wet-asphalt;
+	padding-left: 5%;
 }
 
 /*

@@ -115,14 +115,13 @@
 
 	<div id="content" class="l-content">
 
-	<header id="header" class="header" role="banner">
-		<span class="icn-toggle nav-toggle pull-left"><i class="fa fa-bars"></i></span>
-		<span class="icn-toggle sidebar-toggle"><i class="fa fa-home"></i></span>
-		<h1 class="site-title">
-			<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"
-					title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
-					class=""
-					rel="home"><?php bloginfo( 'name' ); ?></a>
-		</h1>
-		<div class="site-description"><?php bloginfo( 'description' ); ?></div>
-	</header>
+		<header id="header" class="header" role="banner">
+			<span class="icn-toggle nav-toggle pull-left"><i class="fa fa-bars"></i></span>
+			<h1 class="site-title">
+				<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"
+						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+						class=""
+						rel="home"><?php bloginfo( 'name' ); ?></a>
+			</h1>
+			<div class="site-description"><?php bloginfo( 'description' ); ?></div>
+		</header>

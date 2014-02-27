@@ -17,6 +17,10 @@ $p-bottom: 1.35597em;
 	}
 }
 
+/*
+* BLOG ROLL FANCY COLOURING
+*/
+
 //FIRST
 .post-wrapper:nth-child(4n+2),
 .post-n1 {
@@ -84,4 +88,11 @@ $p-bottom: 1.35597em;
   background-position: 0 0, 100% 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+/*
+* SINGLE PAGE POSTS
+*/
+.single .post-wrapper {
+	background: $midnight-blue;
 }

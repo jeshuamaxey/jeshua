@@ -6,7 +6,7 @@
 	//account for fixed header 40px tall
 	padding-top: 40px;
 	
-	background-color: $sunflower;
+	background-color: $alizarin;
 }
 
 .no-js .l-sidebar {
@@ -14,6 +14,6 @@
 }
 
 .js .l-sidebar {
-	margin-right: -200%;
-	float: left;
+	margin-right: -100%;
+	float: right;
 }
