@@ -34,7 +34,9 @@
 		<!-- If comments are open, but there are no comments. -->
 
 	 <?php else : // comments are closed ?>
-		<p><?php _e('Comments are closed.','html5reset'); ?></p>
+		<!-- <p> -->
+		<?php //_e('Comments are closed.','html5reset'); ?>
+		<!-- </p> -->
 
 	<?php endif; ?>
 	
@@ -89,10 +91,11 @@
 			<input name="submit" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment','html5reset'); ?>" />
 			<?php comment_id_fields(); ?>
 		</div>
-		
 		<?php do_action('comment_form', $post->ID); ?>
 
 	</form>
+
+	<button id="hide-comments" class="toggle-comments">Hide Comments</button>
 
 	<?php endif; // If registration required and not logged in ?>
 	

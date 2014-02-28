@@ -18,8 +18,9 @@ header {
 }
 
 footer.copyright {
+	padding: 0 5%;
+	text-align: right;
 	background-color: $wet-asphalt;
-	padding-left: 5%;
 }
 
 /*
@@ -83,6 +84,25 @@ cite {
 
 	border: solid $clouds 1px;
 	border-radius: 4px;
+}
+
+/*
+* Button styles
+*/
+
+button {
+	padding: 4%;
+
+	@include calc('font-size', 0.8*$base-font-size);
+
+	background: $midnight-blue;
+	color: $clouds;
+	border: solid $clouds 1px;
+	
+	border-radius: 0.5em;
+	&:hover {
+		background: $wet-asphalt;
+	}
 }
 
 /*

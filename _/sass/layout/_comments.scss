@@ -1,3 +1,7 @@
+.js .comments-wrapper {
+	display: none;
+}
+
 .comments-wrapper {
 	transition: .3s all ease;
 
@@ -8,11 +12,9 @@
 }
 
 .commentlist {
-	// max-width: 95%;
 	margin: 0;
 
 	list-style: none;
-//	color: $wet-asphalt;
 
 	.comment {
 		margin-bottom: 1.2em;

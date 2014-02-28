@@ -12,22 +12,27 @@
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-
-				<p class="sidebar-toggle">About this post</p>
 				
 				<div class="entry-content">
 					
 					<?php the_content(); ?>
+					<hr>
 
-					<?php wp_link_pages(array('before' => __('Pages: '), 'next_or_number' => 'number')); ?>
-					
-					<?php the_tags( __('Tags: '), ', ', ''); ?>
-				
-					<?php posted_on(); ?>
+					<p>
+						<?php wp_link_pages(array('before' => __('Pages: '), 'next_or_number' => 'number')); ?>
+						<br>
+						<?php the_tags( __('Tags: '), ', ', ''); ?>
+						<br>
+						<?php posted_on(); ?>
+					</p>
 
 				</div>
 				
 				<?php edit_post_link(__('Edit this entry'),'','.'); ?>
+
+				<?php if ( comments_open() ) : ?>
+					<button id="show-comments" class="toggle-comments">Show Comments</button>
+				<?php endif; ?>
 				
 			</article>
 
