@@ -1,6 +1,15 @@
 .respond {
 	max-width: 100%;
 
+	button {
+		@extend button;
+		background: $midnight-blue;
+		&:hover {
+			@extend button:hover;
+			background: $wet-asphalt;
+		}
+	}
+
 	form {
 		div {
 			margin-bottom: 1.0em;
@@ -19,11 +28,13 @@
 
 		input[type=submit] {
 			@extend button;
+			background: $midnight-blue;
 			&:hover {
 				@extend button:hover;
+				background: $wet-asphalt;
 			}
 		}
-	}	
+	}
 }
 
 // .js .respond {

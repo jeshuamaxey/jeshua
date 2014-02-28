@@ -50,10 +50,11 @@ $nav-item-padding: 10px;
 
 			&:hover {
 				border-right: solid $midnight-blue 1px;
-				background-color: $pumpkin;
+				background-color: $orange;
 			}
 			a {
 				//
+				font-weight: $regular;
 				&:hover {
 					text-decoration: none;
 					color: $clouds;

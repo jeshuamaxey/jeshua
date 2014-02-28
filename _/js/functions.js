@@ -27,16 +27,8 @@ j.main = function() {
 		});
 	});
 
-	// colour the blog roll
-	//var numOfArticles = $('article[class^="post"]').length;
-	$('article[class^="post"]').each(function(i) {
-		var classList = $(this).attr('class').split(' ');
-		classList.forEach(function(c) {
-			if(c.substr(0,5) == 'post-') {
-				$('.'+ c).parent().addClass('post-n' + (i%4 + 1) );
-			}
-		});
-	});
+	//intercept navigation to post to add colour infor to URL
+	$('.blog .post h2 a').on('click', j.goToPost);
 
 };
 
@@ -52,6 +44,17 @@ j.setupHeader = function() {
 	  }
 	};
 	$("#header").headroom(headroomSettings);
+}
+
+j.goToPost = function(e) {
+	e.preventDefault();
+	self = this;
+	var colourScheme;
+	$('.blog .post h2 a').each(function(i) {
+		if( $(this).attr('href') == $(self).attr('href') ) colourScheme = i%4;
+	});
+	console.log($(self).attr('href'))
+	//window.location = $(self).attr('href') + 
 }
 
 j.smoothScrollTop = function(y, dur, callback) {

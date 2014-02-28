@@ -25,27 +25,40 @@ h1, h2, h3 {
 h1 {
 	font-size: 3.5em;
 	font-weight: $regular;
+	line-height: 150%;
 	padding-bottom: 1.36142em;
+	a {
+		font-weight: $regular;
+	}
 }
 
 h2 {
 	font-size: 2.63636em;
 	font-weight: $regular;
+	line-height: 150%;
 	padding-bottom: 1.35597em;
+	a {
+		font-weight: $regular;
+	}
 }
 
 h3 {
 	font-size: 1.63636em;
 	font-weight: $regular;
+	line-height: 150%;
 	padding-bottom: 1.37em;
+	a {
+		font-weight: $regular;
+	}
 }
 
 a {
-	color: $silver;
+	color: $clouds;
+	font-weight: $bold;
 
 	text-decoration: none;
 	&:hover {
-		color: $silver;
+		//color: $silver;
 		text-decoration: underline;
 	}
 }

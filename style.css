@@ -1441,15 +1441,15 @@ pre, code, kbd, samp {
   font-family: monospace, sans-serif; }
 
 /* hand cursor on clickable elements */
-.clickable, label, input[type=button], input[type=submit], input[type=file], button, .respond form input[type=submit] {
+.clickable, label, input[type=button], input[type=submit], input[type=file], button, .respond button, .respond form input[type=submit] {
   cursor: pointer; }
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
-button, .respond form input[type=submit], input, select, textarea {
+button, .respond button, .respond form input[type=submit], input, select, textarea {
   margin: 0; }
 
 /* make buttons play nice in IE */
-button, .respond form input[type=submit] {
+button, .respond button, .respond form input[type=submit] {
   width: auto;
   overflow: visible; }
 
@@ -1542,24 +1542,25 @@ cite {
 /*
 * Button styles
 */
-button, .respond form input[type=submit] {
+button, .respond button, .respond form input[type=submit] {
   padding: 4%;
   font-size: -moz-calc(80%);
   font-size: -o-calc(80%);
   font-size: -webkit-calc(80%);
   font-size: calc(#{$expression});
-  background: #2c3e50;
+  background: #f39c12;
   color: #ecf0f1;
   border: solid #ecf0f1 1px;
   border-radius: 0.5em; }
-  button:hover, .respond form input[type=submit]:hover {
-    background: #34495e; }
+  button:hover, .respond button:hover, .respond form input[type=submit]:hover {
+    background: #e67e22; }
 
 /*
 * Images
 */
 img {
-  margin: 0; }
+  margin: 0;
+  border-radius: 0 0.5em; }
   img.alignleft {
     margin: 3px 10px 10px 0; }
   img.alignright {
@@ -1588,23 +1589,32 @@ h1, h2, h3 {
 h1 {
   font-size: 3.5em;
   font-weight: 300;
+  line-height: 150%;
   padding-bottom: 1.36142em; }
+  h1 a {
+    font-weight: 300; }
 
 h2 {
   font-size: 2.63636em;
   font-weight: 300;
+  line-height: 150%;
   padding-bottom: 1.35597em; }
+  h2 a {
+    font-weight: 300; }
 
 h3 {
   font-size: 1.63636em;
   font-weight: 300;
+  line-height: 150%;
   padding-bottom: 1.37em; }
+  h3 a {
+    font-weight: 300; }
 
 a {
-  color: #bdc3c7;
+  color: #ecf0f1;
+  font-weight: 600;
   text-decoration: none; }
   a:hover {
-    color: #bdc3c7;
     text-decoration: underline; }
 
 /* Mozilla dosen't style place holders by default */
@@ -1655,10 +1665,12 @@ textarea:-moz-placeholder {
       border-radius: 0 1em 1em 0; }
       .l-nav ul li:hover {
         border-right: solid #2c3e50 1px;
-        background-color: #d35400; }
-      .l-nav ul li a:hover {
-        text-decoration: none;
-        color: #ecf0f1; }
+        background-color: #f39c12; }
+      .l-nav ul li a {
+        font-weight: 300; }
+        .l-nav ul li a:hover {
+          text-decoration: none;
+          color: #ecf0f1; }
 
 .no-js .l-nav {
   padding: 5%; }
@@ -1695,61 +1707,15 @@ textarea:-moz-placeholder {
 /*
 * BLOG ROLL FANCY COLOURING
 */
-.post-wrapper:nth-child(4n+2), .post-n1 {
-  background: #9b59b6;
-  background-image: linear-gradient(90deg, #2980b9 50%, #9b59b6 50%);
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
-  .post-wrapper:nth-child(4n+2) .post, .post-n1 .post {
-    background: #1abc9c; }
-    .post-wrapper:nth-child(4n+2) .post cite, .post-n1 .post cite {
-      background: #1abc9c; }
-
-.post-wrapper:nth-child(4n+3), .post-n2 {
-  background: #1abc9c;
-  background-image: linear-gradient(90deg, #c0392b 50%, #1abc9c 50%);
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
-  .post-wrapper:nth-child(4n+3) .post, .post-n2 .post {
-    background: #2980b9; }
-    .post-wrapper:nth-child(4n+3) .post cite, .post-n2 .post cite {
-      background: #2980b9; }
-
-.post-wrapper:nth-child(4n), .post-n3 {
-  background: #2980b9;
-  background-image: linear-gradient(90deg, #9b59b6 50%, #2980b9 50%);
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
-  .post-wrapper:nth-child(4n) .post, .post-n3 .post {
-    background: #c0392b; }
-    .post-wrapper:nth-child(4n) .post cite, .post-n3 .post cite {
-      background: #c0392b; }
-
-.post-wrapper:nth-child(4n+1), .post-n4 {
-  background: #c0392b;
-  background-image: linear-gradient(90deg, #1abc9c 50%, #c0392b 50%);
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
-  .post-wrapper:nth-child(4n+1) .post, .post-n4 .post {
-    background: #9b59b6; }
-    .post-wrapper:nth-child(4n+1) .post cite, .post-n4 .post cite {
-      background: #9b59b6; }
-
-.post-wrapper:first-of-type {
-  background-image: linear-gradient(90deg, #2980b9 50%, #2c3e50 50%);
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
-
-/*
-* SINGLE PAGE POSTS
-*/
-.single .post-wrapper {
+.post-wrapper {
   background: #2c3e50; }
+
+.post {
+  background: #f39c12;
+  color: #ecf0f1;
+  margin-bottom: 45px; }
+  .post cite {
+    background: #f39c12; }
 
 .js .comments-wrapper {
   display: none; }
@@ -1776,7 +1742,7 @@ textarea:-moz-placeholder {
       text-align: right;
       background: #34495e; }
       .commentlist .comment div .vcard cite.fn:hover {
-        background: #d35400; }
+        background: #2c3e50; }
     .commentlist .comment div .vcard .says {
       display: none; }
     .commentlist .comment div .comment-meta {
@@ -1861,6 +1827,10 @@ li.thread-odd {}
 
 .respond {
   max-width: 100%; }
+  .respond button, .respond .respond button, .respond .respond button, .respond .respond form input[type=submit], .respond form .respond input[type=submit] {
+    background: #2c3e50; }
+    .respond button:hover {
+      background: #34495e; }
   .respond form div {
     margin-bottom: 1em; }
     .respond form div label {
@@ -1872,6 +1842,10 @@ li.thread-odd {}
       color: #ecf0f1;
       border: solid #ecf0f1 1px;
       border-radius: 0.5em; }
+  .respond form input[type=submit] {
+    background: #2c3e50; }
+    .respond form input[type=submit]:hover {
+      background: #34495e; }
 
 
 
