@@ -2,6 +2,7 @@ $p-bottom: 1.35597em;
 
 .post-wrapper {
 	width: 100%;
+	background: $midnight-blue;
 }
 
 .post {
@@ -12,135 +13,55 @@ $p-bottom: 1.35597em;
 
 	border-radius: 0em 4em;
 
+	background: $orange;
+	color: $clouds;
+
 	.posted-on {
 		font-size: 1.0em;
 	}
+	blockquote, cite {
+		background: $carrot;
+	}
 }
 
-/*
-* BLOG ROLL FANCY COLOURING
-*/
-
-//FIRST
-// .post-wrapper:nth-child(4n+2),
-// .post-n1 {
-// 	background: $amethyst;
-// 	background-image: linear-gradient(90deg, $belize-hole 50%, $amethyst 50%);
-//   background-position: 0 0, 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: 100% 100%;
-// 	.post {
-// 		background: $tuquoise;
-// 		cite {
-// 			background: $tuquoise;
-// 		}
-// 	}
-// }
-// //SECOND
-// .post-wrapper:nth-child(4n+3),
-// .post-n2 {
-// 	background: $tuquoise;
-// 	background-image: linear-gradient(90deg, $pomegranite 50%, $tuquoise 50%);
-//   background-position: 0 0, 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: 100% 100%;
-// 	.post {
-// 		background: $belize-hole;
-// 		cite {
-// 			background: $belize-hole;
-// 		}
-// 	}
-// }
-// //THIRD
-// .post-wrapper:nth-child(4n),
-// .post-n3 {
-// 	background: $belize-hole;
-// 	background-image: linear-gradient(90deg, $amethyst 50%, $belize-hole 50%);
-//   background-position: 0 0, 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: 100% 100%;
-// 	.post {
-// 		background: $pomegranite;
-// 		cite {
-// 			background: $pomegranite;
-// 		}
-// 	}
-// }
-// //FORTH
-// .post-wrapper:nth-child(4n+1),
-// .post-n4 {
-// 	background: $pomegranite;
-// 	background-image: linear-gradient(90deg, $tuquoise 50%, $pomegranite 50%);
-//   background-position: 0 0, 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: 100% 100%;
-// 	.post {
-// 		background: $amethyst;
-// 		cite {
-// 			background: $amethyst;
-// 		}
-// 	}
-// }
-
-// //very first
-// .post-wrapper:first-of-type {
-// 	background-image: linear-gradient(90deg, $belize-hole 50%, $midnight-blue 50%);
-//   background-position: 0 0, 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: 100% 100%;
-// }
-
-// //very last (assumes 10 posts per page)
-// .post-wrapper:nth-of-type(10) {
-// 	background-image: linear-gradient(90deg, $midnight-blue 50%, $tuquoise 50%);
-//   background-position: 0 0, 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: 100% 100%;
-// }
-
-// /*
-// * SINGLE PAGE POSTS
-// */
-// .single .post-wrapper {
-// 	background: $midnight-blue;
-
-// 	.post {
-// 		&.colour-scheme-1 {
-// 			background: $tuquoise;
-// 			cite {
-// 				background: $tuquoise;
-// 			}
-// 		}
-// 		&.colour-scheme-2 {
-// 			background: $belize-hole;
-// 			cite {
-// 				background: $belize-hole;
-// 			}
-// 		}
-// 		&.colour-scheme-3 {
-// 			background: $pomegranite;
-// 			cite {
-// 				background: $pomegranite;
-// 			}
-// 		}
-// 		&.colour-scheme-4 {
-// 			background: $amethyst;
-// 			cite {
-// 				background: $amethyst;
-// 			}
-// 		}
-// 	}
-// }
-
-.post-wrapper {
-	background: $midnight-blue;
-}
-
-.post {
-	background: $orange;
-	color: $clouds;
-	margin-bottom: $header-height;
-	cite {
+.blog {
+	//FIRST
+	.post-wrapper:nth-child(2n+1),
+	.post-n1 {
 		background: $orange;
+		.post {
+			background: $carrot;
+			cite {
+				background: $carrot;
+			}
+		}
+	}
+
+	//SECOND
+	.post-wrapper:nth-child(2n),
+	.post-n2 {
+		background: $carrot;
+		.post {
+			background: $orange;
+			cite {
+				background: $orange;
+			}
+		}
+	}
+
+	//very first
+	.post-wrapper:first-of-type {
+		background-image: linear-gradient(90deg, $carrot 50%, $midnight-blue 50%);
+	  background-position: 0 0, 100% 0;
+	  background-repeat: no-repeat;
+	  background-size: 100% 100%;
+	}
+
+	//very last (assumes 10 posts per page)
+	.post-wrapper:nth-of-type(10) {
+		background-image: linear-gradient(90deg, $midnight-blue 50%, $orange 50%);
+	  background-position: 0 0, 100% 0;
+	  background-repeat: no-repeat;
+	  background-size: 100% 100%;
 	}
 }
