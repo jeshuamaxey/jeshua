@@ -1,4 +1,3 @@
 # To Do
 
-* [ ] fix sidebar visibility 
-* [ ] add padding to sidebar
+* [ ] prevent user from dragging around a page when nav is open

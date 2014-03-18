@@ -16,10 +16,11 @@
 	<?php //wp_footer(); ?>
 
 
-<!-- here comes the javascript -->
+<!-- javascript -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src=\'<?php bloginfo("template_directory"); ?>/_/js/jquery-1.9.1.min.js\'><\/script>')</script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/debouncer.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.lettering.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 	
 </body>

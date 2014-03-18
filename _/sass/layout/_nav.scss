@@ -43,7 +43,7 @@ $nav-item-padding: 10px;
 		li {
 			background-color: $wet-asphalt;
 			
-			transition: background-color 0.3s ease;
+			transition: background-color 0.25s ease;
 
 			padding: 0 5%;
 
@@ -54,10 +54,6 @@ $nav-item-padding: 10px;
 			text-align: right;
 			width: 100%;
 			float: right;
-
-			&.current-menu-item a {
-				color: $sunflower;
-			}
 
 			&:nth-child(1) {
 				border-top: none;
@@ -74,7 +70,7 @@ $nav-item-padding: 10px;
 			}
 
 			&:hover {
-				border-left: solid $midnight-blue 1px;
+				//border-left: solid $midnight-blue 1px;
 				background-color: $orange;
 				color: $clouds;
 				cursor: pointer;
@@ -84,6 +80,15 @@ $nav-item-padding: 10px;
 				font-weight: $regular;
 				&:hover {
 					text-decoration: none;
+					color: $clouds;
+				}
+			}
+			//indicate which page is currently being viewed
+			&.current-menu-item {
+				a {
+					color: $sunflower;
+				}
+				&:hover a {
 					color: $clouds;
 				}
 			}

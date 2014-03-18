@@ -48,7 +48,7 @@
 	// }
 	?>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<?php if (true == of_get_option('head_favicon')) {
 	echo '<meta name=”mobile-web-app-capable” content=”yes”>';
@@ -104,7 +104,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+	<!-- XXXXXXXXXXXXXXXXXXXXX -->
 	<?php wp_head(); ?>
+	<!-- XXXXXXXXXXXXXXXXXXXXX -->
 
 </head>
 
