@@ -1,0 +1,32 @@
+html, body {
+	max-width: 100%;
+	max-height: 100%;
+	font-size: 120%;
+	background: #000;
+	color: white;
+}
+
+body {
+	padding-top: 40px;
+}
+.tv-grid {
+	width: 80%;
+	margin: 0 auto;
+}
+.tv {
+	max-width: 20%;
+	display: inline;
+}
+.tv.blackout {
+	opacity: 0;
+}
+.text {
+	font-family: 'Courier New', monospace;
+	text-align: center;
+}
+a {
+	color: white;
+}
+a:hover {
+	color: #ccc;
+}
