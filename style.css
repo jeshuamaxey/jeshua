@@ -1669,7 +1669,10 @@ textarea:-moz-placeholder {
       text-align: right;
       width: 100%;
       float: right; }
+      .l-nav ul li.current-menu-item a {
+        color: #f1c40f; }
       .l-nav ul li:nth-child(1) {
+        border-top: none;
         width: 80%; }
       .l-nav ul li:nth-child(2) {
         width: 75%; }
@@ -1680,6 +1683,7 @@ textarea:-moz-placeholder {
       .l-nav ul li:hover {
         border-left: solid #2c3e50 1px;
         background-color: #f39c12;
+        color: #ecf0f1;
         cursor: pointer; }
       .l-nav ul li a {
         font-weight: 300; }
@@ -1716,7 +1720,7 @@ textarea:-moz-placeholder {
   width: 100%;
   height: 100%;
   margin-bottom: 2.5em;
-  padding: 4em 0.8em 4em 0.8em;
+  padding: 4em;
   background: #34495e;
   color: #ecf0f1;
   border: solid #f1c40f 1px;
