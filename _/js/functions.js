@@ -3,15 +3,21 @@ var j = j || {};
 
 j.main = function() {
 	//toggle navigation pane
-	$('.nav-toggle').on('click', function() {
-		$('html').toggleClass('scroll-lock');
-		$('body').toggleClass('active-nav');
-	});
+	$('.show-nav').on('click', j.showNav);
+	$('.hide-nav').on('click', j.hideNav);
 
 	//toggle sidebar pane
+	/*
 	$('.sidebar-toggle').on('click', function() {
 		$('html').toggleClass('scroll-lock');
 		$('body').toggleClass('active-sidebar');
+	});
+	*/
+	//allow user to click on lis in nav menu to navigate
+	$('.menu-item').on('click', function() {
+		$('body').removeClass('active-nav');
+		var url = $($(this).children()[0]).attr('href') || '/';
+		window.location.href = url;
 	});
 
 	//view comments
@@ -27,10 +33,21 @@ j.main = function() {
 		});
 	});
 
-	//intercept navigation to post to add colour infor to URL
-	$('.blog .post h2 a').on('click', j.goToPost);
-
 };
+
+j.showNav = function() {
+	$('html').addClass('scroll-lock');
+	$('body').addClass('active-nav');
+	setTimeout(function() {
+		$('.l-content').on('click', j.hideNav);
+	},1)
+}
+
+j.hideNav = function() {
+	$('.l-content').unbind('click');
+	$('html').removeClass('scroll-lock');
+	$('body').removeClass('active-nav');
+}
 
 //
 j.setupHeader = function() {
@@ -44,17 +61,6 @@ j.setupHeader = function() {
 	  }
 	};
 	$("#header").headroom(headroomSettings);
-}
-
-j.goToPost = function(e) {
-	e.preventDefault();
-	self = this;
-	var colourScheme;
-	$('.blog .post h2 a').each(function(i) {
-		if( $(this).attr('href') == $(self).attr('href') ) colourScheme = i%4;
-	});
-	console.log($(self).attr('href'))
-	//window.location = $(self).attr('href') + 
 }
 
 j.smoothScrollTop = function(y, dur, callback) {

@@ -1,4 +1,4 @@
 <div class="navigation">
-	<div class="next-posts"><?php next_posts_link('&laquo; Older Entries') ?></div>
-	<div class="prev-posts"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+	<button class="next-posts"><?php next_posts_link('&laquo; l\'Older Entries') ?></button>
+	<button class="prev-posts"><?php previous_posts_link('Newer Entries &raquo;') ?></button>
 </div>

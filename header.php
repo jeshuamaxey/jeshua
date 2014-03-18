@@ -36,15 +36,19 @@
 
 	<meta name="Copyright" content="Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>. All Rights Reserved.">
 
-	<?php if (true == of_get_option('meta_viewport')) {
-	echo '<meta name="viewport" content="'.of_get_option("meta_viewport").'" />';
-	echo '<!--  Mobile Viewport Fix
-	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-	device-width : Occupy full width of the screen in its current orientation
-	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
-	-->';
-	} ?>
+	<?php
+	// if (true == of_get_option('meta_viewport')) {
+	// echo '<meta name="viewport" content="'.of_get_option("meta_viewport").'" />';
+	// echo '<!--  Mobile Viewport Fix
+	// j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	// device-width : Occupy full width of the screen in its current orientation
+	// initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	// maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	// -->';
+	// }
+	?>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	<?php if (true == of_get_option('head_favicon')) {
 	echo '<meta name=”mobile-web-app-capable” content=”yes”>';
@@ -67,7 +71,6 @@
 	<!-- concatenate and minify for production -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
-	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 	
 	<!-- This is an un-minified, complete version of Modernizr. 
 		 Before you move to production, you should generate a custom build that only has the detects you need. -->
@@ -109,7 +112,7 @@
 	
 	<nav id="nav" role="navigation" class="l-nav">
 		<div class="nav-header">
-			<span class="icn-toggle nav-toggle pull-left"><i class="fa fa-chevron-circle-right"></i></span>
+			<span class="icn-toggle nav-toggle hide-nav pull-left"><i class="fa fa-chevron-circle-right"></i></span>
 		</div>
 		<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => '') );?>
 	</nav>
@@ -117,7 +120,7 @@
 	<div id="content" class="l-content">
 
 		<header id="header" class="header" role="banner">
-			<span class="icn-toggle nav-toggle pull-left"><i class="fa fa-bars"></i></span>
+			<span class="icn-toggle nav-toggle show-nav pull-left"><i class="fa fa-bars"></i></span>
 			<h1 class="site-title">
 				<a 	href="<?php echo esc_url( home_url( '/' ) ); ?>"
 						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"

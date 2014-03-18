@@ -12,6 +12,10 @@
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				
 				<h1 class="entry-title"><?php the_title(); ?></h1>
+
+				<p class="posted-on">
+					<?php posted_on(); ?>
+				</p>
 				
 				<div class="entry-content">
 					
