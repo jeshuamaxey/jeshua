@@ -1,15 +1,64 @@
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
+@media screen
+and (min-width : $mobile-upper)
+and (max-width : $sm-tablet-upper) {
+	.js .active-nav {
+		.l-nav {
+			width: 85%;
+			margin-left: 0%;
+			float: left;
+		}
+		.l-content {
+			margin-left: 85%;
 
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.post-wrapper {
+		//max-width: 71.4%;
+		.post {
+			padding: 4em;
+			.entry {
+				max-width: 530px;
+			}
+		}
+	}
 }
 
-@media all and (orientation: portrait) {
-	
-}
+@media screen
+and (min-width : $sm-tablet-upper)
+and (max-width : $lg-tablet-upper) {}
 
-@media all and (orientation: landscape) {
-	
+@media screen
+and (min-width : $sm-tablet-upper) {//and (max-width : $lg-tablet-upper) {
+	//layout
+	.js {
+		.nav-toggle {
+			display: none;
+		}
+		.l-nav {
+			width: 30%;
+			margin-left: 0%;
+			float: left;
+		}
+		.l-content {
+			width: 70%;
+			max-width: 575px;
+			margin: 0 20% 0 30%;
+		}
+	}
+	.post-wrapper {
+		//max-width: 71.4%;
+		.post {
+			padding: 4em;
+			.entry {
+				max-width: 530px;
+			}
+		}
+	}
 }

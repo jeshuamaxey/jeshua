@@ -8,3 +8,8 @@
 .active-nav .l-sidebar {	
 	margin-right: -100%;
 }
+
+.active-nav .show-nav {
+	transition: opacity 0.2s ease;
+	opacity: 0;
+}

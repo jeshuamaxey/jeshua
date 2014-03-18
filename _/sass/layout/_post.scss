@@ -9,59 +9,62 @@ $p-bottom: 1.35597em;
 	width: 100%;
 	height: 100%;
 	
+	margin-bottom: 2.5em;
 	padding: 4em 0.8em 4em 0.8em;
-
-	border-radius: 0em 4em;
-
-	background: $orange;
+	
+	background: $wet-asphalt;
 	color: $clouds;
+
+	border: solid $sunflower 1px;
+	//border-bottom: none;
+	border-radius: 0em 4em;
 
 	.posted-on {
 		font-size: 1.0em;
 	}
 	blockquote, cite {
-		background: $carrot;
+		background: $midnight-blue;
 	}
 }
 
-.blog {
-	//FIRST
-	.post-wrapper:nth-child(2n+1),
-	.post-n1 {
-		background: $orange;
-		.post {
-			background: $carrot;
-			cite {
-				background: $carrot;
-			}
-		}
-	}
+// .blog {
+// 	//FIRST
+// 	.post-wrapper:nth-child(2n+1),
+// 	.post-n1 {
+// 		background: $orange;
+// 		.post {
+// 			background: $carrot;
+// 			cite {
+// 				background: $carrot;
+// 			}
+// 		}
+// 	}
 
-	//SECOND
-	.post-wrapper:nth-child(2n),
-	.post-n2 {
-		background: $carrot;
-		.post {
-			background: $orange;
-			cite {
-				background: $orange;
-			}
-		}
-	}
+// 	//SECOND
+// 	.post-wrapper:nth-child(2n),
+// 	.post-n2 {
+// 		background: $carrot;
+// 		.post {
+// 			background: $orange;
+// 			cite {
+// 				background: $orange;
+// 			}
+// 		}
+// 	}
 
-	//very first
-	.post-wrapper:first-of-type {
-		background-image: linear-gradient(90deg, $carrot 50%, $midnight-blue 50%);
-	  background-position: 0 0, 100% 0;
-	  background-repeat: no-repeat;
-	  background-size: 100% 100%;
-	}
+// 	//very first
+// 	.post-wrapper:first-of-type {
+// 		background-image: linear-gradient(90deg, $carrot 50%, $midnight-blue 50%);
+// 	  background-position: 0 0, 100% 0;
+// 	  background-repeat: no-repeat;
+// 	  background-size: 100% 100%;
+// 	}
 
-	//very last (assumes 10 posts per page)
-	.post-wrapper:nth-of-type(10) {
-		background-image: linear-gradient(90deg, $midnight-blue 50%, $orange 50%);
-	  background-position: 0 0, 100% 0;
-	  background-repeat: no-repeat;
-	  background-size: 100% 100%;
-	}
-}
+// 	//very last (assumes 10 posts per page)
+// 	.post-wrapper:nth-of-type(10) {
+// 		background-image: linear-gradient(90deg, $midnight-blue 50%, $orange 50%);
+// 	  background-position: 0 0, 100% 0;
+// 	  background-repeat: no-repeat;
+// 	  background-size: 100% 100%;
+// 	}
+// }

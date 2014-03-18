@@ -95,13 +95,13 @@ button {
 
 	@include calc('font-size', 0.8*$base-font-size);
 
-	background: $orange;
+	background: $midnight-blue;
 	color: $clouds;
 	border: solid $clouds 1px;
 	
 	border-radius: 0.5em;
 	&:hover {
-		background: $carrot;
+		background: $wet-asphalt;
 	}
 }
 

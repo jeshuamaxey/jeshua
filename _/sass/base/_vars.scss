@@ -54,8 +54,14 @@ $fixed-font-family: "Lucida Console", Monaco, monospace;
 $fixed-font-size: 85%;
 $fixed-line-height: $base-line-height;
 
-// Headings
 $header-font-weight: $bold;
 
 // Metrics
 $header-height: 45px;
+
+//Breakpoints
+$mobile-upper: 360px;
+$sm-tablet-lower: $mobile-upper;
+$sm-tablet-upper: 600px;
+$lg-tablet-lower: $sm-tablet-upper;
+$lg-tablet-upper: 1024px;

@@ -7,7 +7,7 @@ $nav-item-margin: 10px;
 $nav-item-padding: 10px;
 
 .l-nav {
-	background-color: $wet-asphalt;
+	background-color: $midnight-blue;
 
 	transition: .3s all ease;			
 	width: 100%;
@@ -17,7 +17,8 @@ $nav-item-padding: 10px;
 
 	//
 	.nav-header {
-		height: 40px;
+		background-color: $midnight-blue;
+		height: $nav-header-height;// 40px;
 		padding: 0 10px;
 		.icn-toggle {
 			font-size: 1.14em;
@@ -37,20 +38,40 @@ $nav-item-padding: 10px;
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		border-top: solid $sunflower 1px;
 
 		li {
+			background-color: $wet-asphalt;
 			
-			transition: background-color 0.1s ease;
+			transition: background-color 0.3s ease;
 
-			padding-left: 5%;
+			padding: 0 5%;
 
 			border-top: solid $midnight-blue 1px;
 			border-bottom: solid $midnight-blue 1px;
-			border-radius: 0 1em 1em 0;
+
+			border-radius: 1em 0em 0 1em;
+			text-align: right;
+			width: 100%;
+			float: right;
+
+			&:nth-child(1) {
+				width: 80%;
+			}
+			&:nth-child(2) {
+				width: 75%;
+			}
+			&:nth-child(3) {
+				width: 70%;
+			}
+			&:nth-child(4) {
+				width: 65%;
+			}
 
 			&:hover {
-				border-right: solid $midnight-blue 1px;
+				border-left: solid $midnight-blue 1px;
 				background-color: $orange;
+				cursor: pointer;
 			}
 			a {
 				//
