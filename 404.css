@@ -11,10 +11,11 @@ body {
 }
 .tv-grid {
 	width: 80%;
+	max-width: 400px;
 	margin: 0 auto;
 }
 .tv {
-	max-width: 20%;
+	width: 20%;
 	display: inline;
 }
 .tv.blackout {
