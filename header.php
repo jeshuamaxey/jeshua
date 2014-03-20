@@ -27,9 +27,6 @@
 
 	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 
-	<meta name="description" content="<?php bloginfo('description'); ?>" />
-	<!--Google will often use this as its description of your page/site. Make it good.-->
-
 	<?php if (true == of_get_option('meta_author')) echo '<meta name="author" content="'.of_get_option("meta_author").'" />'; ?>
 	
 	<?php if (true == of_get_option('meta_google')) echo '<meta name="google-site-verification" content="'.of_get_option("meta_google").'" />'; ?>
