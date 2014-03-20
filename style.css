@@ -1583,6 +1583,9 @@ img {
   img.alignright {
     margin: 3px 0 10px 10px; }
 
+iframe {
+  max-width: 100%; }
+
 /*
 *	Typography is in line with the golden ration derived from the Fibonacci sequence
 * the ratio of H1:H1:H3 is 13:8:5
