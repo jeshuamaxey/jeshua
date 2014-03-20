@@ -1,5 +1,6 @@
-/* Media queries!
--------------------------------------------------------------------------------*/
+/*
+* Media queries
+*/
 
 @media screen
 and (min-width : $mobile-upper)
@@ -22,7 +23,7 @@ and (max-width : $sm-tablet-upper) {
 	.post-wrapper {
 		//max-width: 71.4%;
 		.post {
-			padding: 4em;
+			//padding: 4em;
 			.entry {
 				max-width: 530px;
 			}
@@ -30,9 +31,22 @@ and (max-width : $sm-tablet-upper) {
 	}
 }
 
-@media screen
-and (min-width : $sm-tablet-upper)
-and (max-width : $lg-tablet-upper) {}
+// @media screen
+// and (min-width : $sm-tablet-upper)
+// and (max-width : $lg-tablet-upper) {
+// 	// .l-content {
+// 	// 	max-width: 575px;
+// 	// }
+// 	.post-wrapper {
+// 		//max-width: 71.4%;
+// 		.post {
+// 			padding: 4em;
+// 			.entry {
+// 				max-width: 530px;
+// 			}
+// 		}
+// 	}
+// }
 
 @media screen
 and (min-width : $sm-tablet-upper) {//and (max-width : $lg-tablet-upper) {
@@ -55,7 +69,7 @@ and (min-width : $sm-tablet-upper) {//and (max-width : $lg-tablet-upper) {
 	.post-wrapper {
 		//max-width: 71.4%;
 		.post {
-			//padding: 4em;
+			padding: 4em;
 			.entry {
 				max-width: 530px;
 			}

@@ -1,11 +1,4 @@
 // Colours
-// $white: #ffffe5;
-// $off-white: #E6E6CE;
-// $l-grey: #BFBFAC;
-// $d-grey: #808073;
-// $black: #2B2B27;
-// $red: #BF503B;
-
 //http://flatuicolors.com/
 
 //greens
@@ -60,8 +53,8 @@ $header-font-weight: $bold;
 $header-height: 45px;
 
 //Breakpoints
-$mobile-upper: 360px;
+$mobile-upper: 640px;
 $sm-tablet-lower: $mobile-upper;
-$sm-tablet-upper: 600px;
+$sm-tablet-upper: 768px;
 $lg-tablet-lower: $sm-tablet-upper;
 $lg-tablet-upper: 1024px;
