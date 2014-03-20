@@ -1966,9 +1966,9 @@ li.thread-odd {}
     width: 70%;
     max-width: 575px;
     margin: 0 20% 0 30%; }
-  .post-wrapper .post {
+  .post {
     padding: 4em; }
-    .post-wrapper .post .entry {
+    .post .entry {
       max-width: 530px; } }
 
 @media print { }

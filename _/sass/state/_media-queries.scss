@@ -66,13 +66,10 @@ and (min-width : $sm-tablet-upper) {//and (max-width : $lg-tablet-upper) {
 			margin: 0 20% 0 30%;
 		}
 	}
-	.post-wrapper {
-		//max-width: 71.4%;
-		.post {
-			padding: 4em;
-			.entry {
-				max-width: 530px;
-			}
+	.post {
+		padding: 4em;
+		.entry {
+			max-width: 530px;
 		}
 	}
 }
