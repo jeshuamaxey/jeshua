@@ -38,7 +38,7 @@ j.main = function() {
 };
 
 j.showNav = function() {
-	$('html').addClass('scroll-lock');
+	$('html, body').addClass('scroll-lock');
 	$('body').addClass('active-nav');
 	setTimeout(function() {
 		$('.l-content').on('click', j.hideNav);
