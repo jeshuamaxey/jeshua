@@ -34,7 +34,13 @@ j.main = function() {
 	//start filling white a little after
 	setTimeout(function(){
 		setInterval(j.fillWhite, 4000);
-	}, 200)
+	}, 200);
+
+	//hide nav buttons if they have no content ie if they lead nowhere
+	$('.navigation button').each(function() {
+		var $this = $(this);
+		if($this.html() == "") $this.hide();
+	})
 };
 
 j.showNav = function() {

@@ -22,8 +22,37 @@ $p-bottom: 1.35597em;
 	.posted-on {
 		font-size: 1.0em;
 	}
+	/*
+	* Images
+	*/
+	.wp-caption {
+		max-width: 100%;
+
+		@include calc('margin-bottom', $base-line-height * 2em);
+
+		border: solid $sunflower 1px;
+		border-radius: 0 1.0em;
+
+		a {
+			height: 0px;
+			padding: 0;
+			img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 0 1.0em 0 0;	
+			}
+		}
+		.wp-caption-text {
+			padding: 0.5em ;
+			padding-top: 0.1em;
+		}
+
+	}
 	blockquote, cite {
 		background: $midnight-blue;
+	}
+	.tweet {
+		border: none;
 	}
 }
 

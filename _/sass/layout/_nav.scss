@@ -5,7 +5,9 @@ $nav-header-margin: 5px;
 
 $nav-item-margin: 10px;
 $nav-item-padding: 10px;
-
+/*
+*	Main site navigation pane
+*/
 .l-nav {
 	background-color: $midnight-blue;
 
@@ -94,6 +96,13 @@ $nav-item-padding: 10px;
 			}
 		}
 	}
+}
+
+/*
+* Nav links through blog roll history
+*/
+.navigation {
+	padding: 0 5%;
 }
 
 .no-js .l-nav {

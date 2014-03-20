@@ -22,6 +22,8 @@
 <script src="<?php bloginfo('template_directory'); ?>/_/js/debouncer.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.lettering.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/_/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 	
 </body>
 

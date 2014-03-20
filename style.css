@@ -1539,6 +1539,21 @@ cite {
   border-radius: 4px; }
 
 /*
+* Code - highlighing is done by highlight.js
+*/
+pre {
+  border: solid #f1c40f 1px;
+  border-radius: 0 1em;
+  margin-bottom: -moz-calc(2.666em);
+  margin-bottom: -o-calc(2.666em);
+  margin-bottom: -webkit-calc(2.666em);
+  margin-bottom: calc(#{$expression}); }
+  pre code {
+    font-size: 80%;
+    padding: 1em !important;
+    border-radius: 0 1em; }
+
+/*
 * Button styles
 */
 button, .respond button, .respond form input[type=submit] {
@@ -1552,14 +1567,17 @@ button, .respond button, .respond form input[type=submit] {
   border: solid #ecf0f1 1px;
   border-radius: 0.5em; }
   button:hover, .respond button:hover, .respond form input[type=submit]:hover {
-    background: #34495e; }
+    background: #34495e;
+    border: solid #f1c40f 1px; }
+    button:hover a {
+      text-decoration: none; }
 
 /*
 * Images
 */
 img {
-  margin: 0;
-  border-radius: 0 0.5em; }
+  max-width: 100%;
+  margin: 0; }
   img.alignleft {
     margin: 3px 10px 10px 0; }
   img.alignright {
@@ -1636,6 +1654,9 @@ textarea:-moz-placeholder {
 .js .l-content {
   margin-left: 0%; }
 
+/*
+*	Main site navigation pane
+*/
 .l-nav {
   background-color: #2c3e50;
   transition: 0.3s all ease;
@@ -1691,6 +1712,12 @@ textarea:-moz-placeholder {
       .l-nav ul li.current-menu-item:hover a {
         color: #ecf0f1; }
 
+/*
+* Nav links through blog roll history
+*/
+.navigation {
+  padding: 0 5%; }
+
 .no-js .l-nav {
   padding: 5%; }
 
@@ -1725,11 +1752,34 @@ textarea:-moz-placeholder {
   background: #34495e;
   color: #ecf0f1;
   border: solid #f1c40f 1px;
-  border-radius: 0em 4em; }
+  border-radius: 0em 4em;
+  /*
+	* Images
+	*/ }
   .post .posted-on {
     font-size: 1em; }
+  .post .wp-caption {
+    max-width: 100%;
+    margin-bottom: -moz-calc(2.666em);
+    margin-bottom: -o-calc(2.666em);
+    margin-bottom: -webkit-calc(2.666em);
+    margin-bottom: calc(#{$expression});
+    border: solid #f1c40f 1px;
+    border-radius: 0 1em; }
+    .post .wp-caption a {
+      height: 0px;
+      padding: 0; }
+      .post .wp-caption a img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0 1em 0 0; }
+    .post .wp-caption .wp-caption-text {
+      padding: 0.5em;
+      padding-top: 0.1em; }
   .post blockquote, .post cite {
     background: #2c3e50; }
+  .post .tweet {
+    border: none; }
 
 .js .comments-wrapper {
   display: none; }

@@ -106,8 +106,8 @@
 	// Navigation - update coming from twentythirteen
 	function post_navigation() {
 		echo '<div class="navigation">';
-		echo '	<div class="next-posts">'.get_next_posts_link('&laquo; Older Entries').'</div>';
-		echo '	<div class="prev-posts">'.get_previous_posts_link('Newer Entries &raquo;').'</div>';
+		echo '	<button class="next-posts">'.get_next_posts_link('&laquo; Older Entries').'</button>';
+		echo '	<button class="prev-posts">'.get_previous_posts_link('Newer Entries &raquo;').'</button>';
 		echo '</div>';
 	}
 
