@@ -2,6 +2,12 @@
 *	Default styles for elements used throughout the site
 */
 
+html {
+	// gets rid of 300ms touch delay on windows phones
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
 body {
 	max-width: 100%;
 	background-color: $midnight-blue;
@@ -144,4 +150,9 @@ img {
 
 iframe {
 	max-width: 100%;
+
+	&.twitter-tweet {
+		//this is overridden by inline styles - argh!!
+		@include calc('margin-bottom', $base-line-height * 2em);
+	}
 }

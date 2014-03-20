@@ -48,7 +48,8 @@
 	// }
 	?>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- user scalable gets rid of the 300ms delay on touch screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	
 	<?php if (true == of_get_option('head_favicon')) {
 	echo '<meta name=”mobile-web-app-capable” content=”yes”>';

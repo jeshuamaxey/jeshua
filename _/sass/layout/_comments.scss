@@ -16,7 +16,7 @@
 
 	list-style: none;
 
-	.comment {
+	.comment, .pingback {
 		margin-bottom: 1.2em;
 		padding: 0.65em;
 
@@ -36,8 +36,9 @@
 					border-radius: 0 40%;
 				}
 				cite.fn {
-					max-width: 60%;
+					max-width: 50%;
 					top: -1.4em;
+					left: 0em;
 					text-align: right;
 					background: $wet-asphalt;
 					&:hover {
@@ -52,6 +53,10 @@
 			.comment-meta {font-size: 10px;}
 			.comment-meta a {color: #ccc;}
 		}
+	}
+
+	.pingback:first-of-type {
+		margin-top: 1.0em;
 	}
 }
 
