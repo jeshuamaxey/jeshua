@@ -68,6 +68,7 @@
 
 	<!-- concatenate and minify for production -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/js/highlight/styles/monokai_sublime.css" />
 	

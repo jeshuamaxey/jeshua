@@ -11,7 +11,7 @@
 
 html, body {
 	font-size: $base-font-size;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
 	font-weight: $regular;
 	line-height: $base-line-height;
 	color: $clouds;
@@ -32,7 +32,7 @@ h1 {
 	}
 }
 
-h2 {
+h1.entry-title, h2 {
 	font-size: 2.63636em;
 	font-weight: $regular;
 	line-height: 150%;
@@ -58,7 +58,6 @@ a {
 
 	text-decoration: none;
 	&:hover {
-		//color: $silver;
 		text-decoration: underline;
 	}
 }
