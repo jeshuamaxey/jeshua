@@ -1727,6 +1727,30 @@ textarea:-moz-placeholder {
         color: #ecf0f1; }
 
 /*
+* search bar below nav links
+*/
+.searchWrapper {
+  background-color: #34495e;
+  transition: background-color 0.25s ease;
+  padding: 0 5%;
+  border-top: solid #2c3e50 1px;
+  border-bottom: solid #2c3e50 1px;
+  border-radius: 1em 0em 0 1em;
+  text-align: right;
+  width: 60%;
+  float: right; }
+  .searchWrapper input {
+    max-height: 80%;
+    max-width: 100%;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    text-align: right;
+    font-weight: inherit; }
+    .searchWrapper input:focus {
+      outline: none; }
+
+/*
 * Nav links through blog roll history
 */
 .navigation {

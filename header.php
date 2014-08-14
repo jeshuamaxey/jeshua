@@ -117,6 +117,9 @@
 			<span class="icn-toggle nav-toggle hide-nav pull-left"><i class="fa fa-chevron-circle-right"></i></span>
 		</div>
 		<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => '') );?>
+		<form class="searchWrapper" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+			<input type="text" placeholder="search" name="s">
+		</form>
 	</nav>
 
 	<div id="content" class="l-content">
