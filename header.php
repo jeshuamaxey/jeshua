@@ -118,7 +118,7 @@
 		</div>
 		<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => '') );?>
 		<form class="searchWrapper" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-			<input type="text" placeholder="search" name="s">
+			<input type="text" placeholder="Search" name="s" autocomplete="off" autocorrect="off">
 		</form>
 	</nav>
 
