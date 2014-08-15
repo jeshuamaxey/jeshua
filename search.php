@@ -30,7 +30,13 @@
 
 	<?php else : ?>
 
-		<h2><?php _e('Nothing Found','html5reset'); ?></h2>
+		<article class="post">
+
+			<h3><?php _e('Nothing Found :(','html5reset'); ?></h3>
+			<!-- ECHO HOME URL HERE -->
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Return to homepage</a>
+
+		</article>
 
 	<?php endif; ?>
 
