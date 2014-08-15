@@ -1705,12 +1705,14 @@ textarea:-moz-placeholder {
       float: right; }
       .l-nav ul li:nth-child(1) {
         border-top: none;
-        width: 80%; }
+        width: 85%; }
       .l-nav ul li:nth-child(2) {
-        width: 75%; }
+        width: 80%; }
       .l-nav ul li:nth-child(3) {
-        width: 70%; }
+        width: 75%; }
       .l-nav ul li:nth-child(4) {
+        width: 70%; }
+      .l-nav ul li:nth-child(5) {
         width: 65%; }
       .l-nav ul li:hover {
         background-color: #f39c12;
