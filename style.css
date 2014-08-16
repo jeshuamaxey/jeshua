@@ -1799,6 +1799,11 @@ textarea:-moz-placeholder {
 	*/ }
   .post .posted-on {
     font-size: 1em; }
+  .post img {
+    max-width: 100%;
+    height: auto;
+    border: solid #f1c40f 1px;
+    border-radius: 0 1em; }
   .post .wp-caption {
     max-width: 100%;
     height: auto;
@@ -1812,8 +1817,7 @@ textarea:-moz-placeholder {
       height: 0px;
       padding: 0; }
       .post .wp-caption a img {
-        max-width: 100%;
-        height: auto;
+        border: none;
         border-radius: 0 1em 0 0; }
     .post .wp-caption .wp-caption-text {
       padding: 0.5em;
