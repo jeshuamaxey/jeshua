@@ -1546,7 +1546,6 @@ cite {
 * Code - highlighing is done by highlight.js
 */
 pre {
-  border: solid #f1c40f 1px;
   border-radius: 0 1em;
   margin-bottom: -moz-calc(2.666em);
   margin-bottom: -o-calc(2.666em);
@@ -1555,6 +1554,7 @@ pre {
   pre code {
     font-size: 80%;
     padding: 1em !important;
+    border: solid #f1c40f 1px;
     border-radius: 0 1em; }
 
 /*

@@ -96,13 +96,13 @@ cite {
 */
 
 pre {
-	border: solid $sunflower 1px;
 	border-radius: 0 1em;
 	@include calc('margin-bottom', $base-line-height * 2em);
 	
 	code {
 		font-size: 80%;
 		padding: 1.0em !important;
+		border: solid $sunflower 1px;
 		border-radius: 0 1em;
 	}
 }
