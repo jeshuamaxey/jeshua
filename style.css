@@ -1801,6 +1801,7 @@ textarea:-moz-placeholder {
     font-size: 1em; }
   .post .wp-caption {
     max-width: 100%;
+    height: auto;
     margin-bottom: -moz-calc(2.666em);
     margin-bottom: -o-calc(2.666em);
     margin-bottom: -webkit-calc(2.666em);

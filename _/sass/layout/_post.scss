@@ -29,6 +29,7 @@ $p-bottom: 1.35597em;
 	*/
 	.wp-caption {
 		max-width: 100%;
+		height: auto;
 
 		@include calc('margin-bottom', $base-line-height * 2em);
 
