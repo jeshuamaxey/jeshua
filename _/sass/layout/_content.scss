@@ -7,7 +7,17 @@
 }
 
 .no-js .l-content {
-	padding: 5%;
+	padding: 10px 5%;
+
+	.icn-toggle {
+		display: none;
+	}
+
+	.site-title {
+		float: right;
+		position: relative;
+		top: -5px;
+	}
 }
 
 .js .l-content {

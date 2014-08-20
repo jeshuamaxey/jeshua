@@ -5,10 +5,14 @@ $nav-header-margin: 5px;
 
 $nav-item-margin: 10px;
 $nav-item-padding: 10px;
+
 /*
 *	Main site navigation pane
 */
-.l-nav {
+.js .l-nav {
+	margin-left: -100%;
+	float: left;
+
 	background-color: $midnight-blue;
 
 	transition: .3s all ease;			
@@ -136,17 +140,51 @@ $nav-item-padding: 10px;
 }
 
 /*
+* No JavaScript styles
+*/
+.no-js .l-nav {
+	padding: 10px 5%;
+
+	.nav-header {
+		display: none;
+	}
+
+	.menu-top-menu-container {
+		float: left;
+		max-width: 100%;
+	}
+
+	.searchWrapper {
+		float: left;
+		border-radius: 0em 1em 1em 0em;
+		text-align: left;
+		max-width: 20%;
+		padding-left: 10px;
+		input {
+			text-align: left;
+		}
+	}
+
+	ul {
+		// reset default ul styles
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline;
+			margin-right: 5px;
+			&:after {
+				padding-left: 5px;
+				content: '|';
+			}
+		}
+	}
+}
+
+/*
 * Nav links through blog roll history
 */
 .navigation {
 	padding: 0 5%;
-}
-
-.no-js .l-nav {
-	padding: 5%;
-}
-
-.js .l-nav {
-	margin-left: -100%;
-	float: left;
 }
