@@ -33,6 +33,10 @@ $p-bottom: 1.35597em;
 
 		border: solid $sunflower 1px;
 		border-radius: 0 1.0em;
+
+		&.circle {
+			border-radius: 50%;
+		}
 	}
 
 	.wp-caption {

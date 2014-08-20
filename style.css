@@ -1586,8 +1586,6 @@ img {
     margin: 3px 10px 10px 0; }
   img.alignright {
     margin: 3px 0 10px 10px; }
-  img.circle {
-    border-radius: 50%; }
 
 iframe {
   max-width: 100%; }
@@ -1834,6 +1832,8 @@ textarea:-moz-placeholder {
     height: auto;
     border: solid #f1c40f 1px;
     border-radius: 0 1em; }
+    .post img.circle {
+      border-radius: 50%; }
   .post .wp-caption {
     max-width: 100%;
     height: auto;
