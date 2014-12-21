@@ -43,7 +43,7 @@ and (max-width : $sm-tablet-upper) {
 		.post {
 			//padding: 4em;
 			.entry {
-				max-width: 530px;
+				// max-width: 530px;
 			}
 		}
 	}
@@ -63,14 +63,14 @@ and (min-width : $sm-tablet-upper) {
 		}
 		.l-content {
 			width: 70%;
-			max-width: 575px;
+			max-width: 705px;
 			margin: 0 20% 0 30%;
 		}
 	}
 	.post {
 		padding: 4em;
 		.entry {
-			max-width: 530px;
+			// max-width: 530px;
 		}
 	}
 }

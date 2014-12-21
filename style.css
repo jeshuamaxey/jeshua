@@ -2037,9 +2037,7 @@ li.thread-odd {}
   .js .active-nav .l-content {
     margin-left: 85%; }
     .js .active-nav .l-content:hover {
-      cursor: pointer; }
-  .post-wrapper .post .entry {
-    max-width: 530px; } }
+      cursor: pointer; } }
 
 @media screen and (min-width: 768px) {
   .js .nav-toggle {
@@ -2050,11 +2048,9 @@ li.thread-odd {}
     float: left; }
   .js .l-content {
     width: 70%;
-    max-width: 575px;
+    max-width: 705px;
     margin: 0 20% 0 30%; }
   .post {
-    padding: 4em; }
-    .post .entry {
-      max-width: 530px; } }
+    padding: 4em; } }
 
 @media print { }
