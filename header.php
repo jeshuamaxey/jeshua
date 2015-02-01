@@ -68,7 +68,7 @@
 
 	<!-- concatenate and minify for production -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/js/highlight/styles/monokai_sublime.css" />
 	
@@ -102,7 +102,7 @@
 	echo '<meta property="og:image" content="'.of_get_option("meta_app_fb_image").'" />';
 	} */ ?>
 
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="profile" href="//gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<!-- XXXXXXXXXXXXXXXXXXXXX -->
